@@ -9,3 +9,7 @@ Changelog
 - .gitignore en .gitattributes
 - Enqueue scripts and styles
 
+04-01-2022 - Version 0.0.3:
+- npm install
+- gulp (sass + minify css/js + browsersync)
+
