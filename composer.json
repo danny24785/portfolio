@@ -1,0 +1,23 @@
+{
+    "name": "danny-halbesma/postfolio",
+    "description": "",
+    "type": "project",
+    "license": "GPL-3.0",
+    "authors": [
+        {
+            "name": "Danny Halbesma",
+            "email": "dannyhalbesma@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Testtheme\\": "./portfolio"
+        },
+        "classmap": [
+            "./portfolio"
+		]
+	}
+}
+
