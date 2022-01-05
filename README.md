@@ -13,8 +13,12 @@ Changelog
 - npm install
 - gulp (sass + minify css/js + browsersync)
 
-05-01-2022 - Version 0.0.4
+05-01-2022 - Version 0.0.4:
 - Fix minify CSS gulp
 - sidebar.php, page.php en single.php toevoegen
 - template-parts/content.php toevoegen
 - Widgets en hoofdnavigatie toegevoegd
+
+05-01-2022 - Version 0.0.5:
+- Breakpoints
+- Layout.scss en flexbox mixins

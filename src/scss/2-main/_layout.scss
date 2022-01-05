@@ -1,0 +1,7 @@
+@use '0-variables' as *;
+@use '1-mixins' as *;
+
+.main-site-wrapper {
+    background-color: yellow;
+    width: 100%;
+}

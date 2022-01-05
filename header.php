@@ -10,7 +10,9 @@
 
 <header class="header-website">
     
-Header website
+    <div class="branding">
+        Logo
+    </div>
 
     <div class="main-nav">
         <?php wp_nav_menu( array( 

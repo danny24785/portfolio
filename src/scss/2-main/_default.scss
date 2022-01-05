@@ -1,6 +1,8 @@
 @use '0-variables' as *;
+@use '1-mixins' as *;
 
 body {
     background-color: $color-gallery;
-    // background-color: red;
+    margin: 0;
+    padding: 0;
 }

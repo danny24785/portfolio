@@ -1,0 +1,10 @@
+@use '0-variables' as *;
+
+@mixin display-flex($dir-mobile: 'row', $dir-desk: 'row', $breakp: $minsm) {
+    display: flex;
+    flex-direction: $dir-mobile;
+
+    @include breakpoint($breakp) {
+        flex-direction: $dir-desk;
+    }
+}

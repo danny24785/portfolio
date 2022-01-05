@@ -1,0 +1,8 @@
+@use '0-variables' as *;
+@use '1-mixins' as *;
+
+.header-website {
+    @include breakpoint($minsm) {
+        background-color: yellowgreen;
+    }
+}

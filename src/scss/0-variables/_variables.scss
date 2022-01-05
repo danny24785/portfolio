@@ -6,3 +6,35 @@
 $color-white: #FFFFFF;
 $color-black: #000000;
 $color-gallery: #ededed;
+
+
+// Breakpoints
+$max-width-site: 1920px;
+$max-width-page: 1440px;
+$max-width-home: 1800px;
+$max-width-content: 1048px;
+
+
+// Media Queries
+$xxs: 0px 419px;
+$xs: 420px 767px;
+$sm: 768px 991px;
+$md: 992px 1200px;
+$lg: 1201px 1600px;
+$xl: 1601px 1920px;
+$xxl: 1921px;
+
+$minxxs: 0px;
+$minxs: 420px;
+$minsm: 768px;
+$minmd: 992px;
+$minlg: 1201px;
+$minxl: 1601px;
+$minxxl: 1921px;
+
+$maxxxs: 0 419px;
+$maxxs: 0 767px;
+$maxsm: 0 991px;
+$maxmd: 0 1200px;
+$maxlg: 0 1600px;
+$maxxl: 0;
