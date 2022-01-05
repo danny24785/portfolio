@@ -1,6 +1,11 @@
 <footer class="footer-website">
     <div class="footer-website-inner">
-        footer website
+        <?php for($i = 1; $i <= 4; $i++) {
+            if (is_active_sidebar( 'footer-widget-'.$i )) {
+                dynamic_sidebar( 'footer-widget-'.$i );
+            } 
+        } 
+        ?>
     </div>
 </footer>
 

@@ -1,3 +1,2 @@
-body {
-    background-color: blue;
-}
+@use '0-variables' as *;
+@use '2-main' as *;

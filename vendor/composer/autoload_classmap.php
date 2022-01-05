@@ -10,4 +10,6 @@ return array(
     'Portfolio\\Base\\Config' => $baseDir . '/portfolio/Base/Config.php',
     'Portfolio\\Base\\Enqueue' => $baseDir . '/portfolio/Base/Enqueue.php',
     'Portfolio\\Init' => $baseDir . '/portfolio/Init.php',
+    'Portfolio\\Menu\\Menu' => $baseDir . '/portfolio/Menu/Menu.php',
+    'Portfolio\\Widgets\\Widgets' => $baseDir . '/portfolio/Widgets/Widgets.php',
 );
