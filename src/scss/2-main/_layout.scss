@@ -2,6 +2,38 @@
 @use '1-mixins' as *;
 
 .main-site-wrapper {
-    background-color: yellow;
+    @include display-flex($dir-mobile: 'column', $dir-desk: 'column');
+    min-height: 100vh;
     width: 100%;
+}
+
+.content-sidebar-wrapper {
+    @include display-flex($dir-mobile: 'column');
+    margin: 0 0 auto 0;
+
+    main {
+        width: 100%;
+
+        @include breakpoint($minsm) {
+            width: 75%;
+        }
+    }
+
+    aside {
+        width: 100%;
+
+        @include breakpoint($minsm) {
+            width: 25%;
+        }
+    }
+}
+
+.footer-website {
+    @include display-flex();
+    margin: auto 0 0 0;
+}
+
+.footer-website .footer-website-inner,
+aside {
+    @include display-flex();
 }

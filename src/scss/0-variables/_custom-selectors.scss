@@ -1,0 +1,8 @@
+$select-headers: 'h1, h2, h3, h4, h5, h6';
+
+$lists: 'ul, ol';
+$list-items: 'ul li, ol li';
+$table-cells: 'th, td';
+$first-row-table-cells: 'tr:first-of-type th, tr:first-of-type td';
+$table-cells-1st-o-type: 'th:first-of-type, td:first-of-type';
+$table-cells-last-o-type: 'th:last-of-type, td:last-of-type';

@@ -1,0 +1,16 @@
+@use '0-variables' as *;
+@use '1-mixins' as *;
+
+main {
+    @include display-flex();
+    @include inner-padding();
+    background: salmon;
+}
+
+.content-sidebar-wrapper {
+    @include breakpoint($minsm) {
+        background-color: yellow;
+        width: 960px;
+        margin: 0 auto;
+    }
+}

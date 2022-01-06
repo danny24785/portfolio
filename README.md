@@ -22,3 +22,6 @@ Changelog
 05-01-2022 - Version 0.0.5:
 - Breakpoints
 - Layout.scss en flexbox mixins
+
+06-01-2022 - Version 0.0.6:
+- Layout

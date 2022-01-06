@@ -8,21 +8,22 @@
 </head>
 <body>
 
-<header class="header-website">
-    
-    <div class="branding">
-        Logo
-    </div>
-
-    <div class="main-nav">
-        <?php wp_nav_menu( array( 
-            'theme_location' => 'Hoofdmenu', 
-            'container' => false
-        )); ?>
-    </div>
-
-</header>
-
 <div class="main-site-wrapper">
-    <div class="main-site-wrapper-inner">
+
+    <header class="header-website">
+        
+        <div class="branding">
+            Logo
+        </div>
+
+        <div class="main-nav">
+            <?php wp_nav_menu( array( 
+                'theme_location' => 'Hoofdmenu', 
+                'container' => false
+            )); ?>
+        </div>
+
+    </header>
+
+    <div class="content-sidebar-wrapper">
         <main>

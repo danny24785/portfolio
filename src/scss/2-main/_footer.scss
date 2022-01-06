@@ -1,0 +1,23 @@
+@use '0-variables' as *;
+@use '1-mixins' as *;
+
+.footer-website {
+    background-color: red;
+    color: $color-white;
+
+    .footer-website-inner {
+        width: 100%;
+
+        .widget-container {
+            @include inner-padding();
+            @include display-flex();
+            border: 1px solid lighten(red, 30%);
+            flex-grow: 1;
+            justify-content: center;
+
+            @include breakpoint($minsm) {
+                @include display-flex();
+            }
+        }
+    }
+}
