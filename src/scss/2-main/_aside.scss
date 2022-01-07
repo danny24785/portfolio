@@ -3,4 +3,10 @@
 
 aside {
     @include inner-padding();
+
+    .widget-container {
+        @include inner-padding();
+        background-color: $color-white;
+        margin: 0 0 1rem 0;
+    }
 }

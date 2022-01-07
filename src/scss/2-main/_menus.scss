@@ -1,0 +1,36 @@
+@use '0-variables' as *;
+@use '1-mixins' as *;
+
+.main-nav {
+    ul {
+        @include display-flex();
+        padding: 0;
+        margin: 0 0 0 auto;
+
+        li {
+            list-style: none;
+
+            a {
+                @include inner-padding();
+                color: $color-black;
+                display: block;
+                font-weight: bold;
+                text-decoration: none;
+
+                &:hover {
+                    background-color: $color-black;
+                    color: $color-white;
+                }
+            }
+
+            &.current-menu-item a {
+                background-color: $color-black;
+                color: $color-white;
+
+                &:hover {
+                    cursor: text;
+                }
+            }
+        }
+    }
+}

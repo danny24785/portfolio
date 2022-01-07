@@ -1,0 +1,16 @@
+@use '0-variables' as *;
+@use '1-mixins' as *;
+
+body.blog,
+body.single,
+body.page {
+    .content-sidebar-wrapper main {
+        line-height: $content-line-height;
+        font-size: $content-size;
+
+        p {
+            line-height: $content-line-height;
+            font-size: $content-size;
+        }
+    }
+}

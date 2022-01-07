@@ -26,6 +26,7 @@ class ComposerStaticInitc0de7e09fe8f20f769d79a000406aee8
         'Portfolio\\Base\\Enqueue' => __DIR__ . '/../..' . '/portfolio/Base/Enqueue.php',
         'Portfolio\\Init' => __DIR__ . '/../..' . '/portfolio/Init.php',
         'Portfolio\\Menu\\Menu' => __DIR__ . '/../..' . '/portfolio/Menu/Menu.php',
+        'Portfolio\\Overviews\\Excerpt' => __DIR__ . '/../..' . '/portfolio/Overviews/Excerpt.php',
         'Portfolio\\Widgets\\Widgets' => __DIR__ . '/../..' . '/portfolio/Widgets/Widgets.php',
     );
 

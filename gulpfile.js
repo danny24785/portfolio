@@ -8,6 +8,8 @@ const autoprefixer = require('gulp-autoprefixer');
 const include = require('gulp-include')
 const minify = require('gulp-minify');
 const cleanCSS = require('gulp-clean-css');
+const ttf2woff2 = require('gulp-ttf2woff2');
+
 
 const project = 'portfolio'
 
@@ -17,12 +19,14 @@ var paths = {
     src: {
         scss: 'src/scss/**/*.scss',
         jscombine: 'src/js-combine/**/*.js',
-        js: 'src/js/**/*.js'
+        js: 'src/js/**/*.js',
+        fonts: 'src/fonts/**/*.ttf'
     },
     dist: {
         css: 'assets/css',
         js: 'assets/js',
         jscombine: 'assets/js',
+        fonts: 'assets/fonts'
     }
 }
 
@@ -76,6 +80,13 @@ gulp.task('js', function () {
         }))
         .pipe(gulp.dest(paths.dist.js))
         .pipe(browserSync.stream());
+});
+
+// Convert .ttf fonts to .woff2 and place them into the assets/fonts folder
+gulp.task('ttf2woff2', function(){
+    return gulp.src([paths.src.fonts])
+      .pipe(ttf2woff2())
+      .pipe(gulp.dest(paths.dist.fonts));
 });
 
 

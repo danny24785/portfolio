@@ -19,6 +19,7 @@
     "precss": "^4.0.0"
   },
   "devDependencies": {
-    "gulp-clean-css": "^4.3.0"
+    "gulp-clean-css": "^4.3.0",
+    "gulp-ttf2woff2": "^4.0.1"
   }
 }

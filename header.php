@@ -6,14 +6,14 @@
     <title><?php wp_title( '|', true, 'left' ); ?></title>
     <?php wp_head(); ?>
 </head>
-<body>
+<body <?php body_class(); ?>>
 
 <div class="main-site-wrapper">
 
     <header class="header-website">
         
         <div class="branding">
-            Logo
+            <h2><?php echo get_bloginfo( 'name' ); ?></h2>
         </div>
 
         <div class="main-nav">

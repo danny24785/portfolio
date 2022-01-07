@@ -1,0 +1,35 @@
+@use '0-variables' as *;
+@use '1-mixins' as *;
+
+
+// fonts
+@font-face {  
+    font-family: 'InterBold';  
+    font-weight: 700;
+    font-style: bold;
+    font-display: swap;
+    unicode-range: U+000-5FF;
+    src: 
+        url('../../fonts/Inter-Bold.woff2') format('woff2');
+}
+
+@font-face {  
+    font-family: 'InterBlack';  
+    font-weight: 900;
+    font-style: bold;
+    font-display: swap;
+    unicode-range: U+000-5FF;
+    src: 
+        url('../fonts/Inter-Black.woff2') format('woff2');
+}
+
+
+@font-face {  
+    font-family: 'Bebas';  
+    font-weight: 400;
+    font-style: bold;
+    font-display: swap;
+    unicode-range: U+000-5FF;
+    src: 
+        url('../fonts/BebasNeue-Regular.woff2') format('woff2');
+}

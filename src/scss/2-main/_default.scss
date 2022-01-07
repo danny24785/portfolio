@@ -3,10 +3,70 @@
 
 body {
     background-color: $color-gallery;
+    font-family: $content-font;
     margin: 0;
     padding: 0;
 }
 
 #{$select-headers} {
+    font-family: $header-font;
     margin: 0;
+}
+
+h1 {
+    font-size: 2.2rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+}
+
+h3 {
+    font-size: 1.4rem;
+}
+
+h4, 
+h5, 
+h6 {
+    font-size: 1.1rem;
+}
+
+aside,
+.entry-content { 
+    font-size: $content-size;
+    
+    p {
+        font-size: $content-size;
+        color: $color-dove-gray;
+    }
+
+    ul {
+        list-style: none;
+
+        li::before {
+            content: '\276F';
+            color: $color-black;
+            font-weight: bold;
+            font-size: 1rem;
+            display: inline-block;
+            width: 1rem;
+            margin-left: -1rem;
+        }
+    }
+    
+    #{$list-items} {
+        color: $color-dove-gray;
+        font-family: $content-font;
+        font-size: $content-size;
+        line-height: $content-line-height;
+    }
+
+    a {
+        color: $color-black;
+        text-decoration: underline;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
 }

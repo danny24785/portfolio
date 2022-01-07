@@ -15,13 +15,17 @@ Changelog
 
 05-01-2022 - Version 0.0.4:
 - Fix minify CSS gulp
-- sidebar.php, page.php en single.php toevoegen
-- template-parts/content.php toevoegen
-- Widgets en hoofdnavigatie toegevoegd
+- added sidebar.php, page.php en single.php
+- added template-parts/content.php
+- added Widgets and hoofdnavigatie
 
 05-01-2022 - Version 0.0.5:
 - Breakpoints
-- Layout.scss en flexbox mixins
+- Layout.scss and flexbox mixins
 
 06-01-2022 - Version 0.0.6:
 - Layout
+
+07-01-2022 - Version 0.0.7:
+- Styling
+- Added thumbnail support

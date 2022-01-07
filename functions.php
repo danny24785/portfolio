@@ -5,7 +5,7 @@
  * @package portfolio
  */
 
-define('PORTFOLIO_VERSION', '0.0.6');
+define('PORTFOLIO_VERSION', '0.0.7');
 
 error_reporting(E_ALL);
 //error_reporting(E_STRICT);
@@ -25,3 +25,6 @@ if (class_exists('Portfolio\\Init')) {
     $classMap = array_keys(require('vendor/composer/autoload_classmap.php' ));
     Portfolio\Init::run($classMap);
 }
+	
+add_theme_support( 'post-thumbnails' );
+add_image_size( 'header-visual', 700, 350, array( 'center', 'center' ) );
