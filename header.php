@@ -13,7 +13,7 @@
     <header class="header-website">
         
         <div class="branding">
-            <h2><?php echo get_bloginfo( 'name' ); ?></h2>
+            <a href="<?php echo get_home_url(); ?>"><h2><?php echo get_bloginfo( 'name' ); ?></h2></a>
         </div>
 
         <div class="main-nav">

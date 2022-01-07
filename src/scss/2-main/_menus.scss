@@ -16,10 +16,12 @@
                 display: block;
                 font-weight: bold;
                 text-decoration: none;
+                transition: $transition;
 
                 &:hover {
                     background-color: $color-black;
                     color: $color-white;
+                    transition: $transition;
                 }
             }
 

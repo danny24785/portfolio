@@ -29,3 +29,8 @@ Changelog
 07-01-2022 - Version 0.0.7:
 - Styling
 - Added thumbnail support
+
+07-01-2022 - Version 0.0.8:
+- Add hyperlink to homepage on sitename in header
+- Add transitions on hover over
+- Moved functions for custom sizes and featured image support to portfolio/Images/

@@ -14,3 +14,13 @@ body.page {
         }
     }
 }
+
+body.single,
+body.page {
+    .wp-post-image {
+        border-radius: 1rem;
+        margin: 0 0 2rem 0;
+        height: auto;
+        width: 100%;
+    }
+}
