@@ -1,0 +1,22 @@
+@use '0-variables' as *;
+@use '1-mixins' as *;
+
+body.blog {
+    ul.projecten {
+        list-style: none;
+        margin-top: 0;
+        padding: 0;
+
+        .wp-post-image {
+            @include breakpoint($maxxs) {
+                height: auto;
+                width: 100%;
+            }
+        }
+    }
+}
+
+.read-more-wrapper {
+    text-align: right;
+    width: 100%;
+}

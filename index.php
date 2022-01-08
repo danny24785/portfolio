@@ -1,23 +1,33 @@
 <?php
 get_header();
+?>
 
-if (have_posts()) :
-   while (have_posts()) :
-      the_post(); ?>
-         <article>
-            
+<ul class="projecten">
+   <?php
+   if (have_posts()) :
+      while (have_posts()) :
+         the_post(); ?>
+            <li>
+               <article>      
+                  <?php
+                  the_title('<h2>', '</h2>');
+                  the_post_thumbnail( 'header-visual' );
+                  the_excerpt();
+                  ?>
+                  
+                  <div class="read-more-wrapper">
+                     <a href="<?php the_permalink(); ?>" class="btn read-more-btn"><?php _e('Lees meer', 'portfolio'); ?></a>
+                  </div>
+                  
+               </article>
+            </li>
             <?php
-            the_title('<h2>', '</h2>');   
-            the_excerpt();
-            ?>
-            
-            <a href="<?php the_permalink(); ?>"><?php _e('Lees meer', 'portfolio'); ?></a>
-            
-            
-         </article>
-         <?php
-   endwhile;
-endif;
+      endwhile;
+   endif;
+   ?>
+</ul>
+
+<?php
 get_sidebar();
 get_footer(); 
 ?>

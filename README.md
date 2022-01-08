@@ -38,3 +38,14 @@ Changelog
 08-01-2022 - Version 0.0.9:
 - Add mobile menu
 - Making sure the footer of the website is responsive
+
+08-01-2022 - Version 0.1.0:
+- Styling mobile menu
+- Styling hamburger menu
+- Styling forms
+- Styling buttons
+- JS Mobile menu
+- Removed unused divs from template-parts/content.php
+- Added thumbnails to index.php
+- Layout
+- Added custom selectors for form styling

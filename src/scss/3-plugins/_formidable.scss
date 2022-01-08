@@ -1,0 +1,54 @@
+@use '0-variables' as *;
+@use '1-mixins' as *;
+
+#{$select-forms} {
+    @include display-flex();
+    width: 100%;
+    max-width: 100%;
+
+    .frm_form_fields {  
+        max-width: 100%;
+        width: 100%;  
+
+        fieldset {
+            border: none;
+            padding: 0;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            max-width: 100%;
+            width: 100%;
+
+            #{$select-inputs},
+            #{$select-labels} {
+                @include display-flex();
+                height: auto;
+                max-width: 100%;
+                padding: $inner-padding-small;
+                width: 100%;
+            }
+
+            #{$select-labels} {
+                padding-left: 0;
+            }
+
+            #{$select-inputs} {
+                background-color: $color-white;
+                border: none;
+            }
+
+            input[type="radio"] {
+                width: auto;
+            }
+
+            .frm_submit {
+                @include display-flex();
+                justify-content: flex-end;
+            }
+            
+            #{$select-buttons} {
+                @include button();
+            }
+        }
+    }
+}

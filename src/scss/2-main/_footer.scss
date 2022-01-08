@@ -4,8 +4,8 @@
 .footer-website {
     display: flex;
     flex-direction: column;
-    background-color: orange;
     color: $color-white;
+    padding: $inner-padding-medium;
 
     .footer-website-inner {
         @include display-flex($dir-mobile: 'column');
@@ -16,9 +16,30 @@
         .widget-container {
             @include display-flex();
             padding: $inner-padding-small; 
-            border: 1px solid lighten(yellow, 30%);
-            flex-grow: 1;
             justify-content: center;
+            width: 100%;
+
+            @include breakpoint($minsm) {
+                width: 50%;
+            }
+
+            a .attachment-thumb {
+                border-radius: 5px;
+                background-color: $color-white;
+                height: auto;
+                width: 4rem;
+            }
         }
     }
+}
+
+.lower-footer {
+    @include display-flex();
+    justify-content: center;
+    padding: $inner-padding-small;
+}
+
+.footer-website,
+.lower-footer {
+    background-color: $color-white;
 }

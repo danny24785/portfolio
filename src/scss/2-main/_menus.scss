@@ -49,11 +49,21 @@
 }
 
 .hamburger-btn {
-    background-color: $color-black;
-    color: $color-white;
-    font-family: $header-font;
-    height: 2rem;
-    width: 2rem;
+    @include display-flex();
+    align-items: center;
+    justify-content: center;
+
+    ion-icon {
+        color: $color-black;
+        transition: $transition;
+        height: 4rem;
+        width: 4rem;
+
+        &:hover {
+            color: red;
+            transition: $transition;
+        }
+    }
 
     &:hover {
         cursor: pointer;
@@ -80,7 +90,6 @@
 
             a {
                 @include display-flex();
-                background: yellowgreen;
                 color: $color-white;
                 font-size: 1.4rem;
                 font-family: $header-font;
@@ -108,11 +117,20 @@
 
     .close-btn {
         @include display-flex();
-        background: red;
-        color: $color-white;
-        font-family: $header-font;
-        font-size: 2rem;
-        // align-self: flex-end;
+        justify-content: flex-end;
+        padding: $inner-padding-medium;
+
+        ion-icon {
+            color: $color-white;
+            transition: $transition;
+            height: 4rem;
+            width: 4rem;
+    
+            &:hover {
+                color: red;
+                transition: $transition;
+            }
+        }
 
         &:hover {
             cursor: pointer;

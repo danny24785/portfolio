@@ -1,6 +1,10 @@
 @use '0-variables' as *;
 @use '1-mixins' as *;
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     background-color: $color-gallery;
     font-family: $content-font;
@@ -15,14 +19,17 @@ body {
 
 h1 {
     font-size: 2.2rem;
+    margin: 0 0 1rem 0;
 }
 
 h2 {
     font-size: 1.8rem;
+    margin: 0 0 0.75rem 0;
 }
 
 h3 {
     font-size: 1.4rem;
+    margin: 0 0 0.5rem 0;
 }
 
 h4, 
@@ -69,4 +76,8 @@ aside,
             text-decoration: none;
         }
     }
+}
+
+.btn {
+    @include button();
 }

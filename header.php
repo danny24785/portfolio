@@ -10,7 +10,9 @@
 
 <div id="mobile-menu-overlay" class="mobile-menu-overlay">
     <div class="mobile-menu-inner">
-        <div id="close-btn" class="close-btn">SLUIT</div>
+        <div id="close-btn" class="close-btn">
+            <ion-icon name="close-circle-outline"></ion-icon>
+        </div>
         <div class="main-nav">
             <?php wp_nav_menu( array( 
                 'theme_location' => 'Hoofdmenu', 
@@ -36,7 +38,7 @@
         </div>
 
         <div id="hamburger-btn" class="hamburger-btn">
-            HAM
+            <ion-icon name="menu-outline"></ion-icon>
         </div>
 
     </header>
