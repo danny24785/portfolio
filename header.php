@@ -8,6 +8,18 @@
 </head>
 <body <?php body_class(); ?>>
 
+<div id="mobile-menu-overlay" class="mobile-menu-overlay">
+    <div class="mobile-menu-inner">
+        <div id="close-btn" class="close-btn">SLUIT</div>
+        <div class="main-nav">
+            <?php wp_nav_menu( array( 
+                'theme_location' => 'Hoofdmenu', 
+                'container' => false
+            )); ?>
+        </div>
+    </div>
+</div>
+
 <div class="main-site-wrapper">
 
     <header class="header-website">
@@ -21,6 +33,10 @@
                 'theme_location' => 'Hoofdmenu', 
                 'container' => false
             )); ?>
+        </div>
+
+        <div id="hamburger-btn" class="hamburger-btn">
+            HAM
         </div>
 
     </header>

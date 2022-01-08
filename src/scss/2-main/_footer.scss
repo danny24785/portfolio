@@ -2,22 +2,23 @@
 @use '1-mixins' as *;
 
 .footer-website {
-    background-color: red;
+    display: flex;
+    flex-direction: column;
+    background-color: orange;
     color: $color-white;
 
     .footer-website-inner {
+        @include display-flex($dir-mobile: 'column');
+        display: flex;
+        flex-direction: column;
         width: 100%;
 
         .widget-container {
-            @include inner-padding();
             @include display-flex();
-            border: 1px solid lighten(red, 30%);
+            padding: $inner-padding-small; 
+            border: 1px solid lighten(yellow, 30%);
             flex-grow: 1;
             justify-content: center;
-
-            @include breakpoint($minsm) {
-                @include display-flex();
-            }
         }
     }
 }

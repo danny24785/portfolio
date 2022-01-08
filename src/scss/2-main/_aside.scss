@@ -2,10 +2,10 @@
 @use '1-mixins' as *;
 
 aside {
-    @include inner-padding();
+    padding: $inner-padding-small();
 
     .widget-container {
-        @include inner-padding();
+        padding: $inner-padding-small();
         background-color: $color-white;
         margin: 0 0 1rem 0;
     }

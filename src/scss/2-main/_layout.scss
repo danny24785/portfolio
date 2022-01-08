@@ -33,10 +33,6 @@
     margin: auto 0 0 0;
 }
 
-.footer-website .footer-website-inner {
-    @include display-flex();
-}
-
 aside {
     @include display-flex($dir-mobile: 'column', $dir-desk: 'column');
 }

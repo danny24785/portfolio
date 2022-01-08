@@ -3,13 +3,13 @@
 
 .header-website {
     @include display-flex();
-    @include inner-padding();
+    padding: $inner-padding-small();
 }
 
 
 .branding {
     @include display-flex();
-    @include inner-padding();
+    padding: $inner-padding-small();
     margin: 0 auto 0 0;
     align-items: center;
     justify-content: center;

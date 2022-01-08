@@ -34,3 +34,7 @@ Changelog
 - Add hyperlink to homepage on sitename in header
 - Add transitions on hover over
 - Moved functions for custom sizes and featured image support to portfolio/Images/
+
+08-01-2022 - Version 0.0.9:
+- Add mobile menu
+- Making sure the footer of the website is responsive

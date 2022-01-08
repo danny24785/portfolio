@@ -1,9 +1,1 @@
 @use '0-variables' as *;
-
-@mixin inner-padding($hor-desk: 0.5rem, $ver-desk: 0.75rem, $hor-mobile: 0.75rem, $ver-mobile: 0.5rem, $breakp: $minsm) {
-    padding: $ver-desk $hor-desk;
-
-    @include breakpoint($breakp) {
-        padding: $ver-mobile $hor-mobile;
-    }
-}

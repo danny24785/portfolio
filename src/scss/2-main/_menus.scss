@@ -1,38 +1,121 @@
 @use '0-variables' as *;
 @use '1-mixins' as *;
 
-.main-nav {
-    ul {
+.main-nav ul{
+    @include display-flex();
+    padding: 0;
+    margin: 0 0 0 auto;
+
+    li {
+        list-style: none;
+
+        a {
+            @include display-flex;
+            text-decoration: none;
+        }
+    }
+}
+
+.header-website .main-nav {
+    display: none;
+
+    ul li {
+        a {
+            padding: $inner-padding-small();
+            color: $color-black;
+            font-weight: bold;
+            transition: $transition;
+
+            &:hover {
+                background-color: $color-black;
+                color: $color-white;
+                transition: $transition;
+            }
+        }
+
+        &.current-menu-item a {
+            background-color: $color-black;
+            color: $color-white;
+
+            &:hover {
+                cursor: text;
+            }
+        }
+    }
+
+    @include breakpoint($minlg) {
         @include display-flex();
-        padding: 0;
-        margin: 0 0 0 auto;
+    }
+}
+
+.hamburger-btn {
+    background-color: $color-black;
+    color: $color-white;
+    font-family: $header-font;
+    height: 2rem;
+    width: 2rem;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    @include breakpoint($minlg) {
+        display: none;
+    }
+}
+
+.mobile-menu-overlay {
+    @include display-flex();
+    background-color: $color-black;
+    display: none;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+
+    .main-nav ul {
+        @include display-flex($dir-mobile: 'column', $dir-desk: 'column');
+        width: 100vw;
 
         li {
-            list-style: none;
 
             a {
-                @include inner-padding();
-                color: $color-black;
-                display: block;
-                font-weight: bold;
-                text-decoration: none;
+                @include display-flex();
+                background: yellowgreen;
+                color: $color-white;
+                font-size: 1.4rem;
+                font-family: $header-font;
+                justify-content: center;
+                padding: $inner-padding-medium;
                 transition: $transition;
 
                 &:hover {
-                    background-color: $color-black;
-                    color: $color-white;
+                    text-decoration: underline;
                     transition: $transition;
                 }
             }
 
             &.current-menu-item a {
-                background-color: $color-black;
-                color: $color-white;
+                background-color: $color-white;
+                color: $color-black;
 
                 &:hover {
                     cursor: text;
+                    text-decoration: none;
                 }
             }
+        }
+    }
+
+    .close-btn {
+        @include display-flex();
+        background: red;
+        color: $color-white;
+        font-family: $header-font;
+        font-size: 2rem;
+        // align-self: flex-end;
+
+        &:hover {
+            cursor: pointer;
         }
     }
 }

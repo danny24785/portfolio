@@ -3,7 +3,7 @@
 
 main {
     @include display-flex();
-    @include inner-padding();
+    padding: $inner-padding-small();
 }
 
 .content-sidebar-wrapper {
