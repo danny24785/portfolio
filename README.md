@@ -49,3 +49,6 @@ Changelog
 - Added thumbnails to index.php
 - Layout
 - Added custom selectors for form styling
+
+08-01-2022 - Version 0.1.1:
+- Added sticky header

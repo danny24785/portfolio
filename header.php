@@ -24,24 +24,27 @@
 
 <div class="main-site-wrapper">
 
-    <header class="header-website">
-        
-        <div class="branding">
-            <a href="<?php echo get_home_url(); ?>"><h2><?php echo get_bloginfo( 'name' ); ?></h2></a>
-        </div>
+    <div id="sticky-container">
+        <header class="header-website">
+            
+            <div class="branding">
+                <a href="<?php echo get_home_url(); ?>"><h2><?php echo get_bloginfo( 'name' ); ?></h2></a>
+            </div>
 
-        <div class="main-nav">
-            <?php wp_nav_menu( array( 
-                'theme_location' => 'Hoofdmenu', 
-                'container' => false
-            )); ?>
-        </div>
+            <div class="main-nav">
+                <?php wp_nav_menu( array( 
+                    'theme_location' => 'Hoofdmenu', 
+                    'container' => false
+                )); ?>
+            </div>
 
-        <div id="hamburger-btn" class="hamburger-btn">
-            <ion-icon name="menu-outline"></ion-icon>
-        </div>
+            <div id="hamburger-btn" class="hamburger-btn">
+                <ion-icon name="menu-outline"></ion-icon>
+            </div>
 
-    </header>
+        </header>
+
+    </div>
 
     <div class="content-sidebar-wrapper">
         <main>

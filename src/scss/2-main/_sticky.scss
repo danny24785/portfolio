@@ -1,0 +1,17 @@
+@use '0-variables' as *;
+@use '1-mixins' as *;
+
+#sticky-container {
+    background-color: $color-white;
+    display: flex;
+    flex-flow: row wrap;
+    z-index: 99;
+    position: sticky;
+    top: 0;
+    transition: $transition;
+
+    &.scrolled-down {
+        box-shadow: $box-shadow;
+        transition: $transition;
+    }
+}
