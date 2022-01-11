@@ -3,6 +3,7 @@
     <footer class="footer-website">
         <div class="footer-website-inner">
             <div class="widget-container">
+                copyright and stuff
             </div>
             <div class="widget-container">
                 <a href="https://www.linkedin.com/in/dannyhalbesma/" target="_blank">
@@ -11,9 +12,6 @@
             </div>
         </div>
     </footer>
-    <div class="lower-footer">
-        Lower footer for copyright and stuff
-    </div>
 </div>
 
 <?php wp_footer(); ?>

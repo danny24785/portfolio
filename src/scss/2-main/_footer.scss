@@ -33,13 +33,6 @@
     }
 }
 
-.lower-footer {
-    @include display-flex();
-    justify-content: center;
-    padding: $inner-padding-small;
-}
-
-.footer-website,
-.lower-footer {
+.footer-website {
     background-color: $color-white;
 }

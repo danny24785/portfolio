@@ -5,7 +5,7 @@
     background-color: $color-white;
     display: flex;
     flex-flow: row wrap;
-    z-index: 99;
+    z-index: 9;
     position: sticky;
     top: 0;
     transition: $transition;
@@ -13,5 +13,9 @@
     &.scrolled-down {
         box-shadow: $box-shadow;
         transition: $transition;
+    }
+
+    .header-website {
+        padding: 0;
     }
 }

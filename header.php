@@ -36,10 +36,10 @@
                     'theme_location' => 'Hoofdmenu', 
                     'container' => false
                 )); ?>
-            </div>
 
-            <div id="hamburger-btn" class="hamburger-btn">
-                <ion-icon name="menu-outline"></ion-icon>
+                <div id="hamburger-btn" class="hamburger-btn">
+                    <ion-icon name="menu-outline"></ion-icon>
+                </div>
             </div>
 
         </header>

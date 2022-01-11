@@ -52,3 +52,10 @@ Changelog
 
 08-01-2022 - Version 0.1.1:
 - Added sticky header
+
+11-01-2022 - Version 0.1.2:
+- Styling forms
+- Styling (sticky) header website
+- Content layout
+- Removal lower footer
+- Code refactoring header.php
