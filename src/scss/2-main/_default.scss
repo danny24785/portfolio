@@ -15,11 +15,18 @@ body {
 #{$select-headers} {
     font-family: $header-font;
     margin: 0;
+    padding: 0 0 0.5rem 0;
+    background: $gradient-primary-hover;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 h1 {
     font-size: 2.2rem;
-    margin: 0 0 1rem 0;
+    margin: 0;
+    background: $gradient-primary-hover;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 h2 {

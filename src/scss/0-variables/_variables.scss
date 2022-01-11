@@ -11,6 +11,10 @@ $color-gallery: #ededed;
 $color-alto: #ddd;
 $color-blumine: #345470; // donkerblauw
 
+$color-rose: #e60073;
+$color-guardsman-red: #cc0000;
+$color-neon-carrot: #ff9933;
+
 $color-madison: #0B2265; // donkerblauw
 $color-cerulean: #009FDA; // blauw
 $color-bahama-blue: #06609f; // donkerblauw
@@ -35,11 +39,18 @@ $inner-padding-medium: 1.5rem 2rem;
 
 
 // Transitions
-$transition: 0.15s all ease-in-out;
+$transition-fast: 0.15s all ease-in-out;
+$transition-medium: 0.3 all ease-in-out;
+$transition-medium-opacity: 0.3 opacity linear; 
+
+// Gradienst
+$gradient-primary: linear-gradient(225deg, $color-neon-carrot 25%, $color-guardsman-red);
+$gradient-primary-hover: linear-gradient(225deg, $color-neon-carrot 55%, $color-guardsman-red);
 
 
 // Shadows
 $box-shadow: 0 0 15px 0 rgba($color-black, 0.15);
+$text-shadow-red: 0 0 0.25rem darken($color-guardsman-red, 25%);
 
 
 // Breakpoints

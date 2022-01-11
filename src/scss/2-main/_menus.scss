@@ -23,17 +23,17 @@
                     padding: $inner-padding-small();
                     color: $color-black;
                     font-weight: bold;
-                    transition: $transition;
+                    transition: $transition-fast;
 
                     &:hover {
-                        background-color: $color-black;
+                        background-color: $color-neon-carrot;
                         color: $color-white;
-                        transition: $transition;
+                        transition: $transition-fast;
                     }
                 }
 
                 &.current-menu-item a {
-                    background-color: $color-black;
+                    background-color: $color-guardsman-red;
                     color: $color-white;
 
                     &:hover {
@@ -63,13 +63,13 @@
 
     ion-icon {
         color: $color-black;
-        transition: $transition;
+        transition: $transition-fast;
         height: 4rem;
         width: 4rem;
 
         &:hover {
             color: red;
-            transition: $transition;
+            transition: $transition-fast;
         }
     }
 
@@ -104,11 +104,11 @@
                 font-family: $header-font;
                 justify-content: center;
                 padding: $inner-padding-medium;
-                transition: $transition;
+                transition: $transition-fast;
 
                 &:hover {
                     text-decoration: underline;
-                    transition: $transition;
+                    transition: $transition-fast;
                 }
             }
 
@@ -131,13 +131,13 @@
 
         ion-icon {
             color: $color-white;
-            transition: $transition;
+            transition: $transition-fast;
             height: 4rem;
             width: 4rem;
     
             &:hover {
                 color: red;
-                transition: $transition;
+                transition: $transition-fast;
             }
         }
 

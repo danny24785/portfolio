@@ -59,3 +59,7 @@ Changelog
 - Content layout
 - Removal lower footer
 - Code refactoring header.php
+
+11-01-2022 - Version 0.1.3:
+- Added gradient effects
+- Removed unused SCSS files

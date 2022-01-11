@@ -16,7 +16,7 @@ get_header();
                   ?>
                   
                   <div class="read-more-wrapper">
-                     <a href="<?php the_permalink(); ?>" class="btn read-more-btn"><?php _e('Lees meer', 'portfolio'); ?></a>
+                     <a href="<?php the_permalink(); ?>" class="btn read-more-btn gradient-primary"><?php _e('Lees meer', 'portfolio'); ?></a>
                   </div>
                   
                </article>

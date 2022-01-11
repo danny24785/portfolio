@@ -8,11 +8,11 @@
     z-index: 9;
     position: sticky;
     top: 0;
-    transition: $transition;
+    transition: $transition-fast;
 
     &.scrolled-down {
         box-shadow: $box-shadow;
-        transition: $transition;
+        transition: $transition-fast;
     }
 
     .header-website {

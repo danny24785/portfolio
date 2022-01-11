@@ -1,23 +1,26 @@
 @use '0-variables' as *;
 
-@mixin button($btn-color: $color-black, $lbl-color: $color-white) {
-    background-color: $btn-color;
+@mixin button($lbl-color: $color-white) {
+    background-color: $color-neon-carrot;
+    background-image: $gradient-primary;
     border: none;
     color: $lbl-color;
-    font-size: $content-size;
+    font-size: 1.2rem;
     font-family: $header-font;
     display: inline-block;
     margin: 1rem 0 0 auto;
     padding: $inner-padding-small;
     text-decoration: none;
+    text-shadow: $text-shadow-red;
     text-align: center;    
-    transition: $transition;
+    transition: $transition-medium;
     width: 100%;
 
     &:hover {
-        background-color: lighten($btn-color, 35%);
+        background-color: $color-guardsman-red;
+        background-image: $gradient-primary-hover;
         cursor: pointer;
-        transition: $transition;
+        transition: $transition-medium;
     }
 
     @include breakpoint($minsm) {
