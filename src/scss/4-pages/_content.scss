@@ -12,6 +12,22 @@ body.page {
             line-height: $content-line-height;
             font-size: $content-size;
         }
+
+        article {           
+            figure {
+                &.alignleft img {
+                    margin: 0 1rem 0 0;
+                }
+
+                &.alignright img {
+                    margin: 0 0 0 1rem;
+                }
+
+                img {
+                    border-radius: $border-radius-medium;
+                }
+            }
+        }
     }
 }
 

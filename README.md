@@ -68,3 +68,7 @@ Changelog
 - CSS forms
 - CSS menu
 - Code refactory variables border-radius
+
+15-01-2022 - Version 0.1.5:
+- FadeIn effect
+- Margins images in content

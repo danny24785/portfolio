@@ -46,5 +46,5 @@
 
     </div>
 
-    <div class="content-sidebar-wrapper">
+    <div id="content-sidebar-wrapper" class="content-sidebar-wrapper">
         <main>

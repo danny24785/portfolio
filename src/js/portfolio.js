@@ -60,4 +60,10 @@ jQuery(document).ready(function ($) {
         
         lastScrollTop = st;
     }
+
+    // Fade in effect content
+    $('#content-sidebar-wrapper')
+        .css('display', 'flex')
+        .hide()
+        .fadeIn(500);
 });
