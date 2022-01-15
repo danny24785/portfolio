@@ -12,10 +12,11 @@
         ul {
             display: none;
             padding: 0;
-            margin: 0;
+            margin: 0 0.25rem 0 0;
 
             li {
                 list-style: none;
+                margin: 0 0 0 0.25rem;
 
                 a {
                     @include display-flex;
@@ -27,6 +28,7 @@
 
                     &:hover {
                         background-color: $color-neon-carrot;
+                        border-radius: $border-radius-small;
                         color: $color-white;
                         transition: $transition-fast;
                     }
@@ -34,6 +36,7 @@
 
                 &.current-menu-item a {
                     background-color: $color-guardsman-red;
+                    border-radius: $border-radius-small;
                     color: $color-white;
 
                     &:hover {
@@ -105,16 +108,19 @@
                 justify-content: center;
                 padding: $inner-padding-medium;
                 transition: $transition-fast;
+                text-decoration: none;
 
                 &:hover {
-                    text-decoration: underline;
+                    background-color: $color-white;
+                    color: $color-black;
                     transition: $transition-fast;
                 }
             }
 
             &.current-menu-item a {
-                background-color: $color-white;
-                color: $color-black;
+                background-color: $color-neon-carrot;
+                background-image: $gradient-primary;
+                color: $color-white;
 
                 &:hover {
                     cursor: text;
@@ -136,7 +142,7 @@
             width: 4rem;
     
             &:hover {
-                color: red;
+                color: $color-guardsman-red;
                 transition: $transition-fast;
             }
         }

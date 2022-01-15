@@ -18,7 +18,7 @@ body.page {
 body.single,
 body.page {
     .wp-post-image {
-        border-radius: 1rem;
+        border-radius: $border-radius-big;
         margin: 0 0 2rem 0;
         height: auto;
         width: 100%;

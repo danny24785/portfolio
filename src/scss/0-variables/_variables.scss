@@ -24,6 +24,7 @@ $color-vivid-violet: #952D98; // paars
 $color-silver-chalice: #aaa; // lichtgrijs
 $color-dove-gray: #666666; // donkergrijs
 $color-foam: #E2F7FD; // lichtblauw
+$color-pale-canary: #ffff99;
 
 
 // Fonts
@@ -43,6 +44,7 @@ $transition-fast: 0.15s all ease-in-out;
 $transition-medium: 0.3 all ease-in-out;
 $transition-medium-opacity: 0.3 opacity linear; 
 
+
 // Gradienst
 $gradient-primary: linear-gradient(225deg, $color-neon-carrot 25%, $color-guardsman-red);
 $gradient-primary-hover: linear-gradient(225deg, $color-neon-carrot 55%, $color-guardsman-red);
@@ -58,6 +60,11 @@ $max-width-site: 1920px;
 $max-width-page: 1440px;
 $max-width-home: 1800px;
 $max-width-content: 1048px;
+
+
+// Border radius
+$border-radius-small: 0.25rem;
+$border-radius-big: 1rem;
 
 
 // Media Queries

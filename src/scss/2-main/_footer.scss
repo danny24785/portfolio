@@ -24,7 +24,7 @@
             }
 
             a .attachment-thumb {
-                border-radius: 5px;
+                border-radius: $border-radius-small;
                 background-color: $color-white;
                 height: auto;
                 width: 4rem;

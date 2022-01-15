@@ -63,3 +63,8 @@ Changelog
 11-01-2022 - Version 0.1.3:
 - Added gradient effects
 - Removed unused SCSS files
+
+15-01-2022 - Version 0.1.4:
+- CSS forms
+- CSS menu
+- Code refactory variables border-radius

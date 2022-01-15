@@ -1,9 +1,9 @@
 @use '0-variables' as *;
 
 @mixin button($lbl-color: $color-white) {
-    background-color: $color-neon-carrot;
-    background-image: $gradient-primary;
+    background-color: $color-guardsman-red;
     border: none;
+    border-radius: 0.25rem;
     color: $lbl-color;
     font-size: 1.2rem;
     font-family: $header-font;
@@ -11,7 +11,6 @@
     margin: 1rem 0 0 auto;
     padding: $inner-padding-small;
     text-decoration: none;
-    text-shadow: $text-shadow-red;
     text-align: center;    
     transition: $transition-medium;
     width: 100%;
