@@ -14,7 +14,10 @@
     margin: auto auto auto 0;
 
     a {
-        color: $color-black;
+        color: $color-guardsman-red;
+        font-size: 2rem;
+        font-family: 'Bebas', Arial, Helvetica, sans-serif;
+        font-weight: 900;
         text-decoration: none;
         transition: $transition-fast;
 

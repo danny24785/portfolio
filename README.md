@@ -72,3 +72,9 @@ Changelog
 15-01-2022 - Version 0.1.5:
 - FadeIn effect
 - Margins images in content
+
+17-01-2022 - Version 0.1.6:
+- ID added to footer container
+- Removed h2 tags from site branding in header
+- Added animations to mobile menu
+- Styling header website

@@ -28,7 +28,7 @@
         <header class="header-website">
             
             <div class="branding">
-                <a href="<?php echo get_home_url(); ?>"><h2><?php echo get_bloginfo( 'name' ); ?></h2></a>
+                <a href="<?php echo get_home_url(); ?>"><?php echo get_bloginfo( 'name' ); ?></a>
             </div>
 
             <div class="main-nav">

@@ -8,14 +8,26 @@ jQuery(document).ready(function ($) {
 
     // Hamburger menu button
     $('#hamburger-btn').on('click', function(){
-        $('#mobile-menu-overlay').show();
-        $(this).hide();
+        $('#mobile-menu-overlay').animate({
+            left: 0,
+            opacity: 1
+        }, 150, 'swing');
+        $('#mobile-menu-overlay ul li').delay(100).animate({
+            marginLeft: 0,
+            opacity: 1
+        }, 150, 'swing');
     });
 
     // Close mobile menu button
     $('#close-btn').on('click', function(){
-        $('#mobile-menu-overlay').hide();
-        $('#hamburger-btn').show();
+        $('#mobile-menu-overlay').delay(100).animate({
+            left: '-100vw',
+            opacity: 0
+        }, 100, 'swing');
+        $('#mobile-menu-overlay ul li').animate({
+            marginLeft: '-10rem',
+            opacity: 0
+        }, 100, 'swing');
     });
 
     
@@ -61,9 +73,18 @@ jQuery(document).ready(function ($) {
         lastScrollTop = st;
     }
 
-    // Fade in effect content
-    $('#content-sidebar-wrapper')
-        .css('display', 'flex')
-        .hide()
-        .fadeIn(500);
+    // // Fade in effect content
+    // $('#content-sidebar-wrapper')
+    //     .css('display', 'flex')
+    //     .hide()
+    //     .fadeIn(500);
+
+    
+
+    $('#content-sidebar-wrapper').load().animate({
+        opacity: 1,
+        marginTop: 0
+    }, 500, 'swing');
+
+    
 });

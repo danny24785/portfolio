@@ -88,17 +88,21 @@
 .mobile-menu-overlay {
     @include display-flex();
     background-color: $color-black;
-    display: none;
+    opacity: 0;
     position: fixed;
     height: 100vh;
+    left: -100vw;
     width: 100vw;
     z-index: 10;
 
     .main-nav ul {
         @include display-flex($dir-mobile: 'column', $dir-desk: 'column');
         width: 100vw;
+        padding: 0;
 
         li {
+            margin-left: -10rem;
+            opacity: 0;
 
             a {
                 @include display-flex();

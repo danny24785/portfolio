@@ -1,6 +1,6 @@
 
     </div>
-    <footer class="footer-website">
+    <footer id="footer-website" class="footer-website">
         <div class="footer-website-inner">
             <div class="widget-container">
                 copyright and stuff
