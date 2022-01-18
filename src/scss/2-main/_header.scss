@@ -1,8 +1,10 @@
 @use '0-variables' as *;
 @use '1-mixins' as *;
 
-.header-website {
+.sticky-container-content {
+    position: absolute;
     @include display-flex();
+    font-family: $content-font;
     padding: $inner-padding-small();
     width: 100%;
 }
@@ -14,7 +16,7 @@
     margin: auto auto auto 0;
 
     a {
-        color: $color-guardsman-red;
+        color: $color-white;
         font-size: 2rem;
         font-family: 'Bebas', Arial, Helvetica, sans-serif;
         font-weight: 900;
@@ -22,7 +24,6 @@
         transition: $transition-fast;
 
         &:hover {
-            color: $color-dove-gray;
             transition: $transition-fast;
         }
 
@@ -31,5 +32,17 @@
             font-family: 'Bebas', Arial, Helvetica, sans-serif;
             margin: auto 0;
         }
+    }
+}
+
+
+.header-website {
+    background-color: $color-gallery;
+    height: 25rem;
+    overflow: hidden;
+    width: 100%;
+
+    video {
+        margin-top: -35rem;
     }
 }

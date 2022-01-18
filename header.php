@@ -25,7 +25,7 @@
 <div class="main-site-wrapper">
 
     <div id="sticky-container">
-        <header class="header-website">
+        <header class="sticky-container-content">
             
             <div class="branding">
                 <a href="<?php echo get_home_url(); ?>"><?php echo get_bloginfo( 'name' ); ?></a>
@@ -45,6 +45,13 @@
         </header>
 
     </div>
+
+    <div class="header-website">
+        <video loop muted autoplay>
+            <source src="/wp-content/themes/portfolio/assets/video/coding-background.mp4">
+        </video>
+    </div>
+
 
     <div id="content-sidebar-wrapper" class="content-sidebar-wrapper">
         <main>

@@ -1,6 +1,19 @@
 @use '0-variables' as *;
 @use '1-mixins' as *;
 
+.pocket {
+    background-image: 
+        linear-gradient(8deg, rgba(0, 0, 0, 1) 50%, transparent 50%),
+        linear-gradient(8deg, rgba(255, 255, 255, 1) 50.25%, transparent 50.25%);
+    margin: 0 auto;
+    margin-top: -9.5rem;
+    margin-bottom: -2.5rem;
+    max-width: $max-width-content;
+    height: 200px;
+    width: 100%;
+    z-index: 3;
+}
+
 .footer-website {
     display: flex;
     flex-direction: column;

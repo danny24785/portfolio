@@ -6,16 +6,26 @@
 }
 
 body {
-    background-color: $color-gallery;
+    // background-color: $color-gallery;
+    // background: 
+    // linear-gradient(8deg, rgba(0, 0, 0, 1) 22%, transparent 22%),    
+    // linear-gradient(8deg, rgba(255, 255, 255, 1) 83%, transparent 83%),
+    //     url('../img/site-background.jpg') center top/100% auto no-repeat;
     font-family: $content-font;
     margin: 0;
     padding: 0;
 }
 
+.main-site-wrapper {
+    background-image: linear-gradient(0deg, $color-black 400px, $color-white 400px);
+}
+
+
 #{$select-headers} {
     font-family: $header-font;
     margin: 0;
-    padding: 0 0 0.5rem 0;
+    padding: $inner-padding-small;
+    padding-bottom: 0.5rem;
     background: $gradient-primary-hover;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -48,6 +58,7 @@ h6 {
 aside,
 .entry-content { 
     font-size: $content-size;
+    padding: $inner-padding-small;
     
     p {
         font-size: $content-size;

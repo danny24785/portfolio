@@ -29,14 +29,25 @@ body.page {
             }
         }
     }
+
+    .entry-footer {
+        padding: $inner-padding-small;
+    }
 }
 
 body.single,
 body.page {
     .wp-post-image {
         border-radius: $border-radius-big;
-        margin: 0 0 2rem 0;
+        margin: 0;
         height: auto;
         width: 100%;
+    }
+}
+
+body.single {
+    .date-published {
+        padding: $inner-padding-small;
+        font-style: italic;
     }
 }

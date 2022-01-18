@@ -47,12 +47,12 @@ jQuery(document).ready(function ($) {
  
     // Add/remove classes based on page position
     function schrinkHeader() {
-        if($(this).scrollTop() > 400 && !$('.header-website').hasClass('js-shrink')) {
-            $('.header-website').addClass('js-shrink');
+        if($(this).scrollTop() > 50 && !$('.sticky-container-content').hasClass('js-shrink')) {
+            $('.sticky-container-content').addClass('js-shrink');
             $('#sticky-container').addClass('scrolled-down');
         } else {
-            if($(this).scrollTop() < 200) {
-                $('.header-website').removeClass('js-shrink');
+            if($(this).scrollTop() < 25) {
+                $('.sticky-container-content').removeClass('js-shrink');
                 $('#sticky-container').removeClass('scrolled-down');
             }
         }
@@ -64,7 +64,7 @@ jQuery(document).ready(function ($) {
          
         let st = $(this).scrollTop();
         let headerElement = '#sticky-container';
-        let headerElementHeight = $('.header-website').height() + 'px';
+        let headerElementHeight = $('.sticky-container-content').height() + 'px';
 
         st > lastScrollTop
             ? $(headerElement).css('top', ('-' + headerElementHeight))
@@ -82,8 +82,7 @@ jQuery(document).ready(function ($) {
     
 
     $('#content-sidebar-wrapper').load().animate({
-        opacity: 1,
-        marginTop: 0
+        opacity: 1
     }, 500, 'swing');
 
     

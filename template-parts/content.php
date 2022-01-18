@@ -27,9 +27,7 @@
 	if(is_single()) { 
 	?>
 		<time class="date-published">
-			<?php 
-			echo '<span class="date-prefix">' . __('Published on: ', 'portfolio') . '</span>' . esc_html( the_date() ); 
-			?>
+			<?php echo esc_html( the_date() ); ?>
 		</time>
 	<?php 
 	}

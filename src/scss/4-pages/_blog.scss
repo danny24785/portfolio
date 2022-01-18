@@ -1,13 +1,23 @@
 @use '0-variables' as *;
 @use '1-mixins' as *;
 
-body.blog {
-    ul.projecten {
-        list-style: none;
-        margin-top: 0;
-        padding: 0;
+
+ul.projecten {
+    list-style: none;
+    margin-top: 0;
+    padding: 0;
+
+    li article {
+        padding: $inner-padding-small;
+
+        #{$select-headers} {
+            padding: 0;
+        }
 
         .wp-post-image {
+            border-radius: $border-radius-big;
+            width: 100%;
+
             @include breakpoint($maxxs) {
                 height: auto;
                 width: 100%;

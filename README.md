@@ -78,3 +78,8 @@ Changelog
 - Removed h2 tags from site branding in header
 - Added animations to mobile menu
 - Styling header website
+
+18-01-2022 - Version 0.1.7:
+- Header and footer styling
+- Padding content area
+- Video in header

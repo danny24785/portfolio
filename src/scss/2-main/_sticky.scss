@@ -2,7 +2,6 @@
 @use '1-mixins' as *;
 
 #sticky-container {
-    background-color: $color-white;
     display: flex;
     flex-flow: row wrap;
     z-index: 9;
@@ -11,11 +10,17 @@
     transition: $transition-fast;
 
     &.scrolled-down {
+        background-color: $color-white;
         box-shadow: $box-shadow;
         transition: $transition-fast;
     }
 
-    .header-website {
+    .sticky-container-content {
         padding: 0;
+
+        &.js-shrink {
+            background-color: $color-white;
+            box-shadow: $box-shadow;
+        }
     }
 }

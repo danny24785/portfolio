@@ -2,7 +2,7 @@
 @use '1-mixins' as *;
 
 
-.header-website {
+.sticky-container-content {
     @include display-flex();
 
     .main-nav {
@@ -12,7 +12,7 @@
         ul {
             display: none;
             padding: 0;
-            margin: 0 0.25rem 0 0;
+            margin: 0 2rem 0 0;
 
             li {
                 list-style: none;
@@ -22,14 +22,14 @@
                     @include display-flex;
                     text-decoration: none;
                     padding: $inner-padding-small();
-                    color: $color-black;
+                    color: $color-white;
                     font-weight: bold;
                     transition: $transition-fast;
 
                     &:hover {
-                        background-color: $color-neon-carrot;
+                        background-color: $color-white;
                         border-radius: $border-radius-small;
-                        color: $color-white;
+                        color: $color-black;
                         transition: $transition-fast;
                     }
                 }
@@ -54,6 +54,27 @@
 
         @include breakpoint($minsm) {
             @include display-flex();
+        }
+    }
+
+    &.js-shrink { 
+        .main-nav ul li {
+            a {
+                color: $color-black;
+
+                &:hover {
+                    background-color: $color-black;
+                    color: $color-white;
+                }
+            }
+
+            &.current-menu-item a {
+                color: $color-white;
+            }
+        }
+
+        .branding a {
+            color: $color-black;
         }
     }
 }
