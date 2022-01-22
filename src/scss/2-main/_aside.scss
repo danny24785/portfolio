@@ -2,6 +2,7 @@
 @use '1-mixins' as *;
 
 aside {
+    background-color: $color-white;
     padding: $inner-padding-small();
 
     .widget-container {

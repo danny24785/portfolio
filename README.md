@@ -83,3 +83,47 @@ Changelog
 - Header and footer styling
 - Padding content area
 - Video in header
+
+22-01-2022 - Version 0.1.8:
+- Styling
+- Responsive fixes
+- Show the page title on the blog page
+
+
+=============================
+Projects to include:
+- Buurtwerk
+-- theme
+-- activiteiten feed
+-- lettergrootte
+-- header visual functions (icm ACF)
+
+- COKD
+-- theme
+
+- Rondkomeninrotterdam
+-- theme
+-- vrijwilliger inlog
+
+- SWKGroepzoomeravond.nl
+-- jquery effecten tijdens scrollen (staat nu op ontwikkel2, zoek niet meer gebruikte DB uit)
+
+- Leukekinderactiviteiten.nl
+-- beroepentest (als die nog te vinden is ...)
+
+- Loca.nl
+-- Theme
+-- WooCommerce
+
+- Incognito
+-- Theme
+-- Paytium
+
+- Face2Faith? 
+-- Theme
+
+- Mavention
+-- Zie linkein, HTML pagina's klaar zetten op subpagina's
+
+- PSZRotterdam
+-- Locatiesfeed

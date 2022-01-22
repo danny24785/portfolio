@@ -2,9 +2,7 @@
 @use '1-mixins' as *;
 
 .pocket {
-    background-image: 
-        linear-gradient(8deg, rgba(0, 0, 0, 1) 50%, transparent 50%),
-        linear-gradient(8deg, rgba(255, 255, 255, 1) 50.25%, transparent 50.25%);
+    background-image: linear-gradient(8deg, rgba(0, 0, 0, 1) 57%, transparent 57%);
     margin: 0 auto;
     margin-top: -9.5rem;
     margin-bottom: -2.5rem;
@@ -19,6 +17,7 @@
     flex-direction: column;
     color: $color-white;
     padding: $inner-padding-medium;
+    padding-top: 5rem;
 
     .footer-website-inner {
         @include display-flex($dir-mobile: 'column');

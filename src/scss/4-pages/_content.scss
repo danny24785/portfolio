@@ -22,10 +22,6 @@ body.page {
                 &.alignright img {
                     margin: 0 0 0 1rem;
                 }
-
-                img {
-                    border-radius: $border-radius-medium;
-                }
             }
         }
     }
@@ -38,7 +34,6 @@ body.page {
 body.single,
 body.page {
     .wp-post-image {
-        border-radius: $border-radius-big;
         margin: 0;
         height: auto;
         width: 100%;

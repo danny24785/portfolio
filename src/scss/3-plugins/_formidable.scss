@@ -35,7 +35,7 @@
             #{$select-inputs} {
                 background-color: $color-gallery;
                 border: none;
-                border-radius: 0.25rem;
+                // border-radius: 0.25rem;
                 font-size: $content-size;
                 margin: 0 0 0.5rem 0;
                 padding: 1rem;
@@ -44,8 +44,9 @@
                 &:focus,
                 &:focus-visible,
                 &:focus-within {
-                    background-color: lighten($color-pale-canary, 10%);
+                    background-color: $color-white;
                     box-shadow: $box-shadow;
+                    border: 1px solid $color-alto;
                     outline: none;
                     transition: $transition-fast;
                 }

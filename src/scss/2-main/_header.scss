@@ -17,7 +17,7 @@
 
     a {
         color: $color-white;
-        font-size: 2rem;
+        font-size: 1.4rem;
         font-family: 'Bebas', Arial, Helvetica, sans-serif;
         font-weight: 900;
         text-decoration: none;
@@ -31,6 +31,10 @@
             display: block;
             font-family: 'Bebas', Arial, Helvetica, sans-serif;
             margin: auto 0;
+        }
+
+        @include breakpoint($minsm) {
+            font-size: 2rem;
         }
     }
 }

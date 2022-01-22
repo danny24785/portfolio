@@ -15,7 +15,6 @@ ul.projecten {
         }
 
         .wp-post-image {
-            border-radius: $border-radius-big;
             width: 100%;
 
             @include breakpoint($maxxs) {

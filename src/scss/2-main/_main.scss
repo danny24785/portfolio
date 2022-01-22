@@ -17,13 +17,16 @@ main {
 
     main {
         background-color: $color-white;
-        border-radius: 1.25rem;
+        // border-radius: 1.25rem 1.25rem 0 0;
         margin: 0 0 auto 0;
         padding: 1rem;
-        padding-bottom: 7rem;
 
         h1 {
             margin: 1.5rem 0 0;
+        }
+
+        @include breakpoint($minsm) {
+            padding-bottom: 7rem;
         }
     }
 }

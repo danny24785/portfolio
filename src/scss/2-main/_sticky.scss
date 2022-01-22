@@ -18,9 +18,17 @@
     .sticky-container-content {
         padding: 0;
 
+        .hamburger-btn io-icon {
+            background-color: $color-white;
+        }
+
         &.js-shrink {
             background-color: $color-white;
             box-shadow: $box-shadow;
+
+            .hamburger-btn ion-icon {
+                color: $color-black;
+            }
         }
     }
 }
