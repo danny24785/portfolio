@@ -5,7 +5,7 @@
  * @package portfolio
  */
 
-define('PORTFOLIO_VERSION', '0.1.8');
+define('PORTFOLIO_VERSION', '0.1.9');
 
 error_reporting(E_ALL);
 //error_reporting(E_STRICT);

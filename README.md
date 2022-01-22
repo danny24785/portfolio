@@ -89,6 +89,9 @@ Changelog
 - Responsive fixes
 - Show the page title on the blog page
 
+22-01-2022 - Version 0.1.9:
+- Opmaak pagina titels
+
 
 =============================
 Projects to include:
