@@ -92,6 +92,11 @@ Changelog
 22-01-2022 - Version 0.1.9:
 - Opmaak pagina titels
 
+22-01-2022 - Version 0.2.0:
+- Padding headings
+- Project detail page: show headings above post image
+- Project overview: wrap post image in permalink
+
 
 =============================
 Projects to include:
@@ -103,6 +108,7 @@ Projects to include:
 
 - COKD
 -- theme
+-- klaarzetten op ontwikkel1.swkfacetweb.nl, db is gedownload op werk
 
 - Rondkomeninrotterdam
 -- theme

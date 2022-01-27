@@ -11,10 +11,9 @@ get_header();
                <li>
                   <article>      
                      <?php
-                     the_title('<h2>', '</h2>');
-                     the_post_thumbnail( 'header-visual' );
-                     the_excerpt();
-                     ?>
+                     the_title('<h2>', '</h2>'); ?>
+                     <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( 'header-visual' ); ?></a>;
+                     <?php the_excerpt(); ?>
                      
                      <div class="read-more-wrapper">
                         <a href="<?php the_permalink(); ?>" class="btn read-more-btn gradient-primary"><?php _e('Lees meer', 'portfolio'); ?></a>
