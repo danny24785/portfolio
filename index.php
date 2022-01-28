@@ -12,7 +12,7 @@ get_header();
                   <article>      
                      <?php
                      the_title('<h2>', '</h2>'); ?>
-                     <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( 'header-visual' ); ?></a>;
+                     <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail( 'header-visual' ); ?></a>
                      <?php the_excerpt(); ?>
                      
                      <div class="read-more-wrapper">

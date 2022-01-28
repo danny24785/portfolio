@@ -97,6 +97,10 @@ Changelog
 - Project detail page: show headings above post image
 - Project overview: wrap post image in permalink
 
+27-01-2022 - Version 0.2.1:
+- Fix typo project list
+- Styling Cooklie Notice
+
 
 =============================
 Projects to include:

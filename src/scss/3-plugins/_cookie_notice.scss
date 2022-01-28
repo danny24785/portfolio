@@ -1,0 +1,22 @@
+@use '0-variables' as *;
+@use '1-mixins' as *;
+
+#cookie-notice.cookie-notice-visible {
+    background-color: $color-guardsman-red;
+
+    .cookie-notice-container {
+        color: $color-white;
+        font-size: $content-size;
+        line-height: $content-line-height;
+        margin: 0 auto;
+        text-align: left;
+        max-width: 960px;
+        width: 100%;
+
+        .cn-button {
+            @include button();
+            background-color: $color-white;
+            color: $color-guardsman-red;
+        }
+    }
+}
