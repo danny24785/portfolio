@@ -14,9 +14,15 @@
         width: 100%;
 
         .cn-button {
-            @include button();
+            @include button($lbl-color: $color-guardsman-red);
             background-color: $color-white;
-            color: $color-guardsman-red;
+            transition: $transition-fast;
+
+            &:hover {
+                @include button($lbl-color: $color-black);
+                background-image: none;
+                transition: $transition-fast;
+            }
         }
     }
 }

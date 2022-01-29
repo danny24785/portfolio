@@ -101,6 +101,10 @@ Changelog
 - Fix typo project list
 - Styling Cooklie Notice
 
+28-01-2022 - Version 0.2.2:
+- hover over fix button Cookie Notice (removed gradient background)
+
+
 
 =============================
 Projects to include:
