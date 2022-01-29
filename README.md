@@ -104,6 +104,9 @@ Changelog
 28-01-2022 - Version 0.2.2:
 - hover over fix button Cookie Notice (removed gradient background)
 
+28-01-2022 - Version 0.2.3: 
+- Styling close button Cookie Notice
+
 
 
 =============================

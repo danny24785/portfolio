@@ -25,4 +25,24 @@
             }
         }
     }
+
+    #cn-close-notice {
+        color: $color-white;
+        font-size: 2rem;
+        opacity: 1;
+
+        &::before,
+        &::after {
+            background-color: $color-white;
+            transition: $transition-fast;
+        }
+
+        &:hover {
+            &::before,
+            &::after {
+                background-color: $color-black;
+                transition: $transition-fast;
+            }    
+        }
+    }
 }
