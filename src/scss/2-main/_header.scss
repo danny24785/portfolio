@@ -41,12 +41,36 @@
 
 
 .header-website {
-    background-color: $color-gallery;
-    height: 25rem;
+    background-color: $color-black;
+    height: 100vh;
     overflow: hidden;
     width: 100%;
 
+    .header-swiper {
+        background-color: navy;
+        width: 100%;
+
+        .swiper-container {
+            background-color: red;
+            color: $color-white;
+            margin: 12rem auto 0;            
+            width: 100%;
+            z-index: 12;
+
+            .swiper-wrapper {
+                background-color: yellowgreen;
+
+                .swiper-slide {
+                    background-color: yellow;
+                    padding: 6rem 4rem;
+                    color: black;
+                    width: 100%;
+                }
+            }
+        }
+    }
+
     video {
-        margin-top: -35rem;
+        margin-top: -15rem;
     }
 }

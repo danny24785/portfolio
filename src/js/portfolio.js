@@ -1,3 +1,6 @@
+
+var headerSwiper;
+
 jQuery(document).ready(function ($) {
     
     /**
@@ -82,8 +85,21 @@ jQuery(document).ready(function ($) {
     
 
     $('#content-sidebar-wrapper').load().animate({
-        opacity: 1
+        opacity: 1,
     }, 500, 'swing');
 
     
+    headerSwiper = new Swiper('.swiper-container', {
+        direction: 'horizontal',
+        loop: true, 
+        grabCursor: true,
+    
+        // pagination: {
+        //     el: '.swiper-pagination',
+        // },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev"
+        }
+    });
 });

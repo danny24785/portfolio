@@ -47,6 +47,25 @@
     </div>
 
     <div class="header-website">
+        <div class="header-swiper" id="headerSwiper">
+            <div class="swiper-container">    
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">Slide 1</div>
+                    <div class="swiper-slide">Slide 2</div>
+                    <div class="swiper-slide">Slide 3</div>
+                </div>
+                <!-- If we need pagination -->
+                <!-- <div class="swiper-pagination"></div> -->
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev">prev</div>
+                <div class="swiper-button-next">next</div>
+
+                <!-- If we need scrollbar -->
+                <!-- <div class="swiper-scrollbar"></div> -->
+            </div>    
+        </div>
         <video loop muted autoplay>
             <source src="/wp-content/themes/portfolio/assets/video/coding-background.mp4">
         </video>

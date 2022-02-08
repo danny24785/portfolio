@@ -107,6 +107,10 @@ Changelog
 28-01-2022 - Version 0.2.3: 
 - Styling close button Cookie Notice
 
+08-02-2022 - Version 0.2.4:
+- Styling aangepast (.pocket uitgecommentarieerd en header visual 100vh hoog)
+- Swiper slide toegevoegd
+
 
 
 =============================

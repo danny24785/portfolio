@@ -2,11 +2,11 @@
 @use '1-mixins' as *;
 
 .pocket {
-    background-image: linear-gradient(8deg, rgba(0, 0, 0, 1) 57%, transparent 57%);
+    // background-image: linear-gradient(8deg, rgba(0, 0, 0, 1) 57%, transparent 57%);
     margin: 0 auto;
-    margin-top: -9.5rem;
-    margin-bottom: -2.5rem;
-    max-width: $max-width-content;
+    // margin-top: -9.5rem;
+    // margin-bottom: -2.5rem;
+    // max-width: $max-width-content;
     height: 200px;
     width: 100%;
     z-index: 3;
@@ -46,5 +46,5 @@
 }
 
 .footer-website {
-    background-color: $color-white;
+    background-color: $color-guardsman-red;
 }

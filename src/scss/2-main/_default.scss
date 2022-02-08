@@ -12,12 +12,12 @@ body {
 }
 
 .main-site-wrapper {
-    background-image: linear-gradient(0deg, $color-black 400px, $color-gallery 400px);
+    // background-image: linear-gradient(0deg, $color-black 400px, $color-gallery 400px);
 }
 
 
 #{$select-headers} {
-    color: $color-guardsman-red;
+    color: $color-black;
     font-family: $header-font;
     margin: 0;
     padding: $inner-padding-small;
@@ -26,19 +26,19 @@ body {
 }
 
 h1 {
-    background-color: $color-guardsman-red;
-    border-radius: $border-radius-small;
-    box-shadow: $box-shadow-dark;
-    color: $color-white;
+    // background-color: $color-guardsman-red;
+    // border-radius: $border-radius-small;
+    // box-shadow: $box-shadow-dark;
+    // color: $color-white;
     font-size: 2.2rem;
     margin: 0 0 1rem 0;
-    padding: $inner-padding-small;
+    // padding: $inner-padding-small;
     padding-top: 0.85rem;
     padding-bottom: 1.15rem;
     transition: $transition-fast;
 
     @include breakpoint($minlg) {
-        margin: 0 0 1rem -2rem;
+        // margin: 0 0 1rem -2rem;
         transition: $transition-fast;
     }
 }

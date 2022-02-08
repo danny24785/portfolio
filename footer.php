@@ -1,7 +1,7 @@
 
     </div>
     
-    <div class="pocket"></div>
+    <!-- <div class="pocket"></div> -->
     
     <footer id="footer-website" class="footer-website">
         <div class="footer-website-inner">
