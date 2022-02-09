@@ -44,9 +44,32 @@ jQuery(document).ready(function ($) {
     $(window).on('scroll', function () {
         styleHeaderScrollDown(50, 25);
         showOnScrollUp();
+        scrollInView('.entry-content p');
+        scrollInView('.entry-content ul');
+        scrollInView('.entry-content ol');
+        scrollInView('.entry-content img');
+        scrollInView('.entry-content h2');
+        scrollInView('.entry-content h3');
+        scrollInView('.entry-content h4');
+        // scrollInView('h1.entry-title');
+        // scrollInView('#footer-website'); 
+        // scrollInView('.frm_form_field');
     });
 
-    let windowHeight = Math.round( $(window).height() );
+    $(window).on('load', function () {
+        scrollInView('.entry-content p');
+        scrollInView('.entry-content ul');
+        scrollInView('.entry-content ol');
+        scrollInView('.entry-content img');
+        scrollInView('.entry-content h2');
+        scrollInView('.entry-content h3');
+        scrollInView('.entry-content h4');
+        // scrollInView('h1.entry-title');
+        // scrollInView('#footer-website');
+        // scrollInView('.frm_form_field');
+        // scrollInView('.swiper-container');
+        // scrollInView('.header-website');
+    });
  
     // Add/remove classes based on page position
     function styleHeaderScrollDown(whenToAdd, whenToRemove) {
@@ -94,8 +117,41 @@ jQuery(document).ready(function ($) {
         },
         speed: 600,
         navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev"
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev'
         }
     });
+
+    /**
+     * 
+     * Load elements when they scroll into view
+     * 
+     */
+    function scrollInView(element) { 
+        // '#content-sidebar-wrapper'
+        let top_of_element = $(element).offset().top;
+        let bottom_of_element = $(element).offset().top + $(element).outerHeight();
+        let bottom_of_screen = $(window).scrollTop() + $(window).innerHeight();
+        let top_of_screen = $(window).scrollTop();
+    
+        //  && (top_of_screen < bottom_of_element)
+
+        if ((bottom_of_screen > top_of_element && (top_of_screen < bottom_of_element))){
+            setTimeout(function() {
+                $(element).css({
+                    'opacity': 1,
+                    'transition': '0.6s all ease-in-out',
+                    'padding-top': '0'
+                });
+            }, 250);
+        } /* else {
+            setTimeout(function() {
+                $(element).css({
+                    'opacity': 0,
+                    'transition': 'none',
+                    'padding-top': '2rem'
+                });
+            }, 250);
+        } */
+    }
 });

@@ -43,12 +43,7 @@
 
         &.js-shrink .branding a {
             @include breakpoint($minsm) {
-                font-size: 2rem;
-                transition: $transition-fast;
-            }
-
-            @include breakpoint($minxl) {
-                font-size: 4rem;
+                font-size: 1.5rem;
                 transition: $transition-fast;
             }
         }
@@ -89,7 +84,7 @@
         z-index: 12;
         overflow: hidden;     
 
-        .swiper-wrapper {     
+        .swiper-wrapper {
 
             .swiper-slide {
                 color: $color-white;

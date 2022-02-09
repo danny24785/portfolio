@@ -28,6 +28,11 @@ body.page {
 
     .entry-content {
         min-height: 20rem;
+        
+        p {
+            padding-top: 2rem;
+            transition: $transition-medium;
+        }
     }
 
     .entry-footer {

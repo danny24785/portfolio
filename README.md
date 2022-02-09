@@ -131,6 +131,9 @@ Changelog
 - Removed more unused code
 - Moved functions from functions.php to /portfolio
 
+08-02-2022 - Version 0.2.9:
+- Loading effects
+
 
 
 =============================

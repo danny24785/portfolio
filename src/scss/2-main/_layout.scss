@@ -7,9 +7,6 @@
     width: 100%;
 }
 
-#content-sidebar-wrapper {
-    // opacity: 0;
-}
 
 .content-sidebar-wrapper {
     @include display-flex($dir-mobile: 'column');
