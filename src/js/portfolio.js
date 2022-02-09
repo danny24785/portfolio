@@ -42,14 +42,14 @@ jQuery(document).ready(function ($) {
 	
     // On init
     $(window).on('scroll', function () {
-        styleHeaderScrollDown(50, 25, ['#sticky-container', '.sticky-container-content']);
+        styleHeaderScrollDown(50, 25);
         showOnScrollUp();
     });
 
-    let videoHeight = Math.round( $(window).height() );
+    let windowHeight = Math.round( $(window).height() );
  
     // Add/remove classes based on page position
-    function styleHeaderScrollDown(whenToAdd, whenToRemove, targetedClasses) {
+    function styleHeaderScrollDown(whenToAdd, whenToRemove) {
         if($(this).scrollTop() > whenToAdd && !$('.sticky-container-content').hasClass('js-shrink')) {
             $('.sticky-container-content').addClass('js-shrink');
             $('#sticky-container, #headerSwiper').addClass('scrolled-down');

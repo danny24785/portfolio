@@ -127,6 +127,10 @@ Changelog
 - Removed unused code
 - Added swiper options for speed and autoplay
 
+08-02-2022 - Version 0.2.8:
+- Removed more unused code
+- Moved functions from functions.php to /portfolio
+
 
 
 =============================

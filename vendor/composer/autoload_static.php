@@ -24,11 +24,13 @@ class ComposerStaticInitc0de7e09fe8f20f769d79a000406aee8
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
         'Portfolio\\Base\\Config' => __DIR__ . '/../..' . '/portfolio/Base/Config.php',
         'Portfolio\\Base\\Enqueue' => __DIR__ . '/../..' . '/portfolio/Base/Enqueue.php',
+        'Portfolio\\CPT\\Headervisualtexts' => __DIR__ . '/../..' . '/portfolio/CPT/Headervisualtexts.php',
         'Portfolio\\Images\\FeaturedImage' => __DIR__ . '/../..' . '/portfolio/Images/FeaturedImage.php',
         'Portfolio\\Images\\ImageSizes' => __DIR__ . '/../..' . '/portfolio/Images/ImageSizes.php',
         'Portfolio\\Init' => __DIR__ . '/../..' . '/portfolio/Init.php',
         'Portfolio\\Menu\\Menu' => __DIR__ . '/../..' . '/portfolio/Menu/Menu.php',
         'Portfolio\\Overviews\\Excerpt' => __DIR__ . '/../..' . '/portfolio/Overviews/Excerpt.php',
+        'Portfolio\\Swiper\\Headervisualswiper' => __DIR__ . '/../..' . '/portfolio/Swiper/Headervisualswiper.php',
         'Portfolio\\Widgets\\Widgets' => __DIR__ . '/../..' . '/portfolio/Widgets/Widgets.php',
     );
 
