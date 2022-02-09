@@ -26,6 +26,10 @@ body.page {
         }
     }
 
+    .entry-content {
+        min-height: 20rem;
+    }
+
     .entry-footer {
         padding: $inner-padding-small;
     }

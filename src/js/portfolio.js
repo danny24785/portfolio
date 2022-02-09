@@ -39,31 +39,43 @@ jQuery(document).ready(function ($) {
      * Sticky header
      * 
      */
-
-    let lastScrollTop = 0;
 	
     // On init
     $(window).on('scroll', function () {
-        schrinkHeader();
-        scrollUpDown();
+        styleHeaderScrollDown(50, 25, ['#sticky-container', '.sticky-container-content']);
+        showOnScrollUp();
     });
+
+    let videoHeight = Math.round( $(window).height() );
+
+    // targetedClass = ['#sticky-container', '.sticky-container-content'];
+    
+    // alert(targetedClass[1]);
+
+    // function addClassOnScroll() {
+    //     if(true) {
+
+    //     }
+    // }
  
     // Add/remove classes based on page position
-    function schrinkHeader() {
-        if($(this).scrollTop() > 50 && !$('.sticky-container-content').hasClass('js-shrink')) {
+    function styleHeaderScrollDown(whenToAdd, whenToRemove, targetedClasses) {
+        if($(this).scrollTop() > whenToAdd && !$('.sticky-container-content').hasClass('js-shrink')) {
             $('.sticky-container-content').addClass('js-shrink');
             $('#sticky-container').addClass('scrolled-down');
         } else {
-            if($(this).scrollTop() < 25) {
+            if($(this).scrollTop() < whenToRemove) {
                 $('.sticky-container-content').removeClass('js-shrink');
                 $('#sticky-container').removeClass('scrolled-down');
             }
         }
 
     }
+
+    let lastScrollTop = 0;
      
     // Don't show sticky header when window is being scrolled down
-    function scrollUpDown() {
+    function showOnScrollUp() {
          
         let st = $(this).scrollTop();
         let headerElement = '#sticky-container';

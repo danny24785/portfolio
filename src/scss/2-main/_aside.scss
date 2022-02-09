@@ -1,13 +1,14 @@
 @use '0-variables' as *;
 @use '1-mixins' as *;
 
-aside {
-    background-color: $color-white;
-    padding: $inner-padding-small();
+// aside {
+//     background-color: red !important;
+//     background-color: $color-white;
+//     padding: $inner-padding-small();
 
-    .widget-container {
-        padding: $inner-padding-small();
-        background-color: $color-white;
-        margin: 0 0 1rem 0;
-    }
-}
+//     .widget-container {
+//         padding: $inner-padding-small();
+//         background-color: $color-white;
+//         margin: 0 0 1rem 0;
+//     }
+// }

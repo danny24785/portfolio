@@ -7,70 +7,99 @@
     font-family: $content-font;
     padding: $inner-padding-small();
     width: 100%;
-}
 
-
-.branding {
-    @include display-flex();
-    padding: $inner-padding-medium();
-    margin: auto auto auto 0;
-
-    a {
-        color: $color-white;
-        font-size: 1.4rem;
-        font-family: 'Bebas', Arial, Helvetica, sans-serif;
-        font-weight: 900;
-        text-decoration: none;
-        transition: $transition-fast;
-
-        &:hover {
-            transition: $transition-fast;
-        }
-
-        h2 {
-            display: block;
-            font-family: 'Bebas', Arial, Helvetica, sans-serif;
-            margin: auto 0;
-        }
-
-        @include breakpoint($minsm) {
-            font-size: 2rem;
-        }
-    }
-}
-
-
-.header-website {
-    background-color: $color-black;
-    height: 100vh;
-    overflow: hidden;
-    width: 100%;
-
-    .header-swiper {
-        background-color: navy;
-        width: 100%;
-
-        .swiper-container {
-            background-color: red;
+    .branding {
+        @include display-flex();
+        padding: $inner-padding-medium();
+        margin: auto auto auto 0;
+    
+        a {
             color: $color-white;
-            margin: 12rem auto 0;            
-            width: 100%;
-            z-index: 12;
-
-            .swiper-wrapper {
-                background-color: yellowgreen;
-
-                .swiper-slide {
-                    background-color: yellow;
-                    padding: 6rem 4rem;
-                    color: black;
-                    width: 100%;
-                }
+            font-size: 1.4rem;
+            font-family: 'Bebas', Arial, Helvetica, sans-serif;
+            font-weight: 900;
+            text-decoration: none;
+            transition: $transition-fast;
+    
+            &:hover {
+                transition: $transition-fast;
+            }
+    
+            h2 {
+                display: block;
+                font-family: 'Bebas', Arial, Helvetica, sans-serif;
+                margin: auto 0;
+            }
+    
+            @include breakpoint($minsm) {
+                font-size: 4rem;
+                transition: $transition-fast;
             }
         }
     }
 
+    @include breakpoint($minsm) {
+        &.js-shrink .branding a {
+            font-size: 2rem;
+            transition: $transition-fast;
+        }
+    }
+}
+ 
+
+.video-container {
+    background-color: $color-black;
+    height: 100vh;
+    position: relative;
+    width: 100vw;
+
     video {
-        margin-top: -15rem;
+        background-color: $color-black;
+        height: 100%;
+        position: absolute;
+        object-fit: cover;
+        overflow: hidden;
+        width: 100%;
+        
+        
+    }
+}
+
+
+.header-swiper {
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+
+    .swiper-container {
+        color: $color-white;
+        margin: 12rem auto 0;
+        height: 60vh;
+        position: relative;
+        width: 100%;
+        z-index: 12;
+
+        .swiper-wrapper {                
+
+            .swiper-slide {
+                color: $color-white;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 12rem;
+                width: 100%;
+
+                #{$select-headers} {
+                    color: $color-white;
+                }
+            }
+        }
+
+        .swiper-button-prev, 
+        .swiper-button-next {
+            color: $color-white;
+            top: 50%;
+        }
     }
 }

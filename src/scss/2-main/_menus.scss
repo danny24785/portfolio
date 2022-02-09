@@ -21,10 +21,12 @@
                 a {
                     @include display-flex;
                     text-decoration: none;
-                    padding: $inner-padding-small();
+                    font-size: 1;
                     color: $color-white;
+                    font-size: 1.4rem;
                     font-weight: bold;
                     transition: $transition-fast;
+                    padding: 0.75rem 1.25rem;
 
                     &:hover {
                         background-color: $color-white;
@@ -61,6 +63,8 @@
         .main-nav ul li {
             a {
                 color: $color-black;
+                font-size: 1rem;
+                padding: $inner-padding-small;
 
                 &:hover {
                     background-color: $color-black;
@@ -114,7 +118,7 @@
     height: 100vh;
     left: -100vw;
     width: 100vw;
-    z-index: 10;
+    z-index: 13;
 
     .main-nav ul {
         @include display-flex($dir-mobile: 'column', $dir-desk: 'column');

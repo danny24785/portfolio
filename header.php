@@ -25,7 +25,7 @@
 <div class="main-site-wrapper">
 
     <div id="sticky-container">
-        <header class="sticky-container-content">
+        <header class="header-website sticky-container-content">
             
             <div class="branding">
                 <a href="<?php echo get_home_url(); ?>"><?php echo get_bloginfo( 'name' ); ?></a>
@@ -46,30 +46,16 @@
 
     </div>
 
-    <div class="header-website">
-        <div class="header-swiper" id="headerSwiper">
-            <div class="swiper-container">    
-                <div class="swiper-wrapper">
-                    <!-- Slides -->
-                    <div class="swiper-slide">Slide 1</div>
-                    <div class="swiper-slide">Slide 2</div>
-                    <div class="swiper-slide">Slide 3</div>
-                </div>
-                <!-- If we need pagination -->
-                <!-- <div class="swiper-pagination"></div> -->
+    <div class="header-swiper" id="headerSwiper">
+        <?php echo do_shortcode('[portfolio-header-texts]'); ?>
+    </div>
 
-                <!-- If we need navigation buttons -->
-                <div class="swiper-button-prev">prev</div>
-                <div class="swiper-button-next">next</div>
-
-                <!-- If we need scrollbar -->
-                <!-- <div class="swiper-scrollbar"></div> -->
-            </div>    
-        </div>
-        <video loop muted autoplay>
+    <div class="video-container">
+        <video id="header-video" loop muted autoplay playsinline>
             <source src="/wp-content/themes/portfolio/assets/video/coding-background.mp4">
         </video>
     </div>
+    
 
 
     <div id="content-sidebar-wrapper" class="content-sidebar-wrapper">

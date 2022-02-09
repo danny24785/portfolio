@@ -111,6 +111,10 @@ Changelog
 - Styling aangepast (.pocket uitgecommentarieerd en header visual 100vh hoog)
 - Swiper slide toegevoegd
 
+08-02-2022 - Version 0.2.5:
+- Fix video afspelen in Safari iOS
+- Layout fixed mobile
+
 
 
 =============================
