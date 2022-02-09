@@ -108,12 +108,19 @@ Changelog
 - Styling close button Cookie Notice
 
 08-02-2022 - Version 0.2.4:
-- Styling aangepast (.pocket uitgecommentarieerd en header visual 100vh hoog)
-- Swiper slide toegevoegd
+- Adjusted styling (commented out .pocket and give the header visual a height of 100vh )
+- Added Swiper slide toegevoegd
 
 08-02-2022 - Version 0.2.5:
-- Fix video afspelen in Safari iOS
+- Fix video autoplay in Safari iOS
 - Layout fixed mobile
+
+08-02-2022 - Version 0.2.6:
+- Code refactory
+- Fix horizontal scroll
+- Layout fixes mobile
+- Z-index fix swiper and sticky header
+- Added Lobster font for swiper
 
 
 

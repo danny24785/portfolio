@@ -1,47 +1,51 @@
 @use '0-variables' as *;
 @use '1-mixins' as *;
 
-.sticky-container-content {
-    position: absolute;
-    @include display-flex();
-    font-family: $content-font;
-    padding: $inner-padding-small();
-    width: 100%;
+#sticky-container {
 
-    .branding {
+
+    .sticky-container-content {
+        position: absolute;
         @include display-flex();
-        padding: $inner-padding-medium();
-        margin: auto auto auto 0;
-    
-        a {
-            color: $color-white;
-            font-size: 1.4rem;
-            font-family: 'Bebas', Arial, Helvetica, sans-serif;
-            font-weight: 900;
-            text-decoration: none;
-            transition: $transition-fast;
-    
-            &:hover {
-                transition: $transition-fast;
-            }
-    
-            h2 {
-                display: block;
+        font-family: $content-font;
+        padding: 0;
+        width: 100%;
+
+        .branding {
+            @include display-flex();
+            padding: $inner-padding-medium();
+            margin: auto auto auto 0;
+        
+            a {
+                color: $color-white;
+                font-size: 1.9rem;
                 font-family: 'Bebas', Arial, Helvetica, sans-serif;
-                margin: auto 0;
-            }
-    
-            @include breakpoint($minsm) {
-                font-size: 4rem;
+                font-weight: 900;
+                text-decoration: none;
                 transition: $transition-fast;
+        
+                &:hover {
+                    transition: $transition-fast;
+                }
+        
+                h2 {
+                    display: block;
+                    font-family: 'Bebas', Arial, Helvetica, sans-serif;
+                    margin: auto 0;
+                }
+        
+                @include breakpoint($minsm) {
+                    font-size: 4rem;
+                    transition: $transition-fast;
+                }
             }
         }
-    }
 
-    @include breakpoint($minsm) {
-        &.js-shrink .branding a {
-            font-size: 2rem;
-            transition: $transition-fast;
+        @include breakpoint($minsm) {
+            &.js-shrink .branding a {
+                font-size: 2rem;
+                transition: $transition-fast;
+            }
         }
     }
 }
@@ -51,7 +55,7 @@
     background-color: $color-black;
     height: 100vh;
     position: relative;
-    width: 100vw;
+    width: 100%;
 
     video {
         background-color: $color-black;
@@ -69,37 +73,51 @@
 .header-swiper {
     width: 100%;
     position: absolute;
-    overflow: hidden;
+    overflow: hidden;    
 
     .swiper-container {
         color: $color-white;
-        margin: 12rem auto 0;
+        margin: 6rem auto 0;
         height: 60vh;
         position: relative;
         width: 100%;
         z-index: 12;
+        overflow: hidden;     
 
-        .swiper-wrapper {                
+        .swiper-wrapper {     
 
             .swiper-slide {
-                color: $color-white;
+                color: $color-dusty-gray;
                 display: flex;
                 flex-direction: column;
+                font-family: $swiper-font;
+                font-weight: bold;
                 justify-content: center;
                 align-items: center;
-                padding: 12rem;
+                padding: 4rem;
+                line-height: 2rem;
                 width: 100%;
 
                 #{$select-headers} {
-                    color: $color-white;
+                    color: $color-dusty-gray;
+                }
+
+                @include breakpoint($minsm) {
+                    font-size: 2rem;
+                    line-height: 3rem;
+                    padding: 12rem;
                 }
             }
         }
 
         .swiper-button-prev, 
         .swiper-button-next {
-            color: $color-white;
+            color: $color-dusty-gray;
             top: 50%;
+        }
+
+        @include breakpoint($minsm) {
+            margin: 12rem auto 0;
         }
     }
 }

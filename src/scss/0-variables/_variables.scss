@@ -4,12 +4,14 @@
 
 // Colors
 // @link http://www.color-blindness.com/color-name-hue
-$color-black: #000;
-$color-white: #fff;
-$color-dark-gray: #aaa;
+$color-black: #000000;
+$color-white: #ffffff;
+$color-dove-gray: #666666;
+$color-dusty-gray: #999999;
+$color-silver-chalice: #aaaaaa;
+$color-silver: #CCCCCC;
+$color-alto: #dddddd;
 $color-gallery: #ededed;
-$color-alto: #ddd;
-$color-blumine: #345470; // donkerblauw
 
 $color-rose: #e60073;
 $color-guardsman-red: #cc0000;
@@ -21,13 +23,13 @@ $color-bahama-blue: #06609f; // donkerblauw
 $color-gold-drop: #E98300;// oranje
 $color-thunderbird: #D52B1E; // rood
 $color-vivid-violet: #952D98; // paars
-$color-silver-chalice: #aaa; // lichtgrijs
-$color-dove-gray: #666666; // donkergrijs
 $color-foam: #E2F7FD; // lichtblauw
+$color-blumine: #345470; // donkerblauw
 
 
 // Fonts
-$header-font: 'InterBlack';
+$header-font: 'InterBlack', Verdana, sans-serif;
+$swiper-font: 'Lobster', Georgia, sans-serif;
 $content-font: Arial, Helvetica, sans-serif;
 $content-size: 1.1rem;
 $content-line-height: 2.2rem;

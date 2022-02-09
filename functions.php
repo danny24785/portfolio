@@ -5,7 +5,7 @@
  * @package portfolio
  */
 
-define('PORTFOLIO_VERSION', '0.2.5');
+define('PORTFOLIO_VERSION', '0.2.6');
 
 error_reporting(E_ALL);
 //error_reporting(E_STRICT);
@@ -105,7 +105,6 @@ function headerTextsShortCode( $atts ) {
 
 			$output .= '<div class="swiper-slide">';
             
-			$output .= '<h3>' . get_the_title() . '</h3>';
 			$output .= get_the_content();
 			$output .= '</div>';
 		}

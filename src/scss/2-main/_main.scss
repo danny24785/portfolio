@@ -1,29 +1,21 @@
 @use '0-variables' as *;
 @use '1-mixins' as *;
 
-main {
-    @include display-flex();
-    padding: $inner-padding-small();
-}
-
 .content-sidebar-wrapper {
-    // margin-top: -6rem;
-    z-index: 2;
-
-    @include breakpoint($minsm) {
-        width: $max-width-content;
-        // margin: -6rem auto 0;
-        margin: 0 auto;
-    }
-
     main {
+        @include display-flex();
         background-color: $color-white;
-        // border-radius: 1.25rem 1.25rem 0 0;
         margin: 0 0 auto 0;
         padding: 1rem;
 
         @include breakpoint($minsm) {
             padding-bottom: 7rem;
         }
+    }
+
+    @include breakpoint($minsm) {
+        width: 100%;
+        max-width: $max-width-content;
+        margin: 0 auto;
     }
 }
