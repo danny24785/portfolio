@@ -122,6 +122,11 @@ Changelog
 - Z-index fix swiper and sticky header
 - Added Lobster font for swiper
 
+08-02-2022 - Version 0.2.7:
+- Styling fixes menu on mobile and tablet
+- Removed unused code
+- Added swiper options for speed and autoplay
+
 
 
 =============================

@@ -35,9 +35,9 @@
                     a {
                         @include display-flex;
                         text-decoration: none;
-                        font-size: 1;
+                        font-size: 1rem;
                         color: $color-white;
-                        font-size: 1.4rem;
+                        font-size: 1rem;
                         font-weight: bold;
                         transition: $transition-fast;
                         padding: 0.75rem 1.25rem;
@@ -47,6 +47,10 @@
                             border-radius: $border-radius-small;
                             color: $color-black;
                             transition: $transition-fast;
+                        }
+
+                        @include breakpoint($minlg) {
+                            font-size: 1.4rem;
                         }
                     }
 
@@ -61,7 +65,7 @@
                     }
                 }
 
-                @include breakpoint($minsm) {
+                @include breakpoint($minlg) {
                     @include display-flex();
                     align-items: center;
                     width: 100%;
@@ -126,7 +130,7 @@
             cursor: pointer;
         }
 
-        @include breakpoint($minsm) {
+        @include breakpoint($minlg) {
             display: none;
         }
     }

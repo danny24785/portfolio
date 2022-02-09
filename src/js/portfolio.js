@@ -47,26 +47,16 @@ jQuery(document).ready(function ($) {
     });
 
     let videoHeight = Math.round( $(window).height() );
-
-    // targetedClass = ['#sticky-container', '.sticky-container-content'];
-    
-    // alert(targetedClass[1]);
-
-    // function addClassOnScroll() {
-    //     if(true) {
-
-    //     }
-    // }
  
     // Add/remove classes based on page position
     function styleHeaderScrollDown(whenToAdd, whenToRemove, targetedClasses) {
         if($(this).scrollTop() > whenToAdd && !$('.sticky-container-content').hasClass('js-shrink')) {
             $('.sticky-container-content').addClass('js-shrink');
-            $('#sticky-container').addClass('scrolled-down');
+            $('#sticky-container, #headerSwiper').addClass('scrolled-down');
         } else {
             if($(this).scrollTop() < whenToRemove) {
                 $('.sticky-container-content').removeClass('js-shrink');
-                $('#sticky-container').removeClass('scrolled-down');
+                $('#sticky-container, #headerSwiper').removeClass('scrolled-down');
             }
         }
 
@@ -88,27 +78,21 @@ jQuery(document).ready(function ($) {
         lastScrollTop = st;
     }
 
-    // // Fade in effect content
-    // $('#content-sidebar-wrapper')
-    //     .css('display', 'flex')
-    //     .hide()
-    //     .fadeIn(500);
 
-    
+    /**
+     * 
+     * Swiper
+     * 
+     */
 
-    $('#content-sidebar-wrapper').load().animate({
-        opacity: 1,
-    }, 500, 'swing');
-
-    
     headerSwiper = new Swiper('.swiper-container', {
         direction: 'horizontal',
         loop: true, 
         grabCursor: true,
-    
-        // pagination: {
-        //     el: '.swiper-pagination',
-        // },
+        autoplay: {
+            delay: 5000,
+        },
+        speed: 600,
         navigation: {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev"

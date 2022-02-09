@@ -16,8 +16,7 @@
     "gulp-uglify": "^3.0.2",
     "js-cookie": "^2.2.1",
     "postcss-combine-media-query": "^1.0.1",
-    "precss": "^4.0.0",
-    "swiper": "^8.0.3"
+    "precss": "^4.0.0"
   },
   "devDependencies": {
     "gulp-clean-css": "^4.3.0",

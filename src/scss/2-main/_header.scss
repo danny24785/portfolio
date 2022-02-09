@@ -3,7 +3,6 @@
 
 #sticky-container {
 
-
     .sticky-container-content {
         position: absolute;
         @include display-flex();
@@ -18,7 +17,7 @@
         
             a {
                 color: $color-white;
-                font-size: 1.9rem;
+                font-size: 1.5rem;
                 font-family: 'Bebas', Arial, Helvetica, sans-serif;
                 font-weight: 900;
                 text-decoration: none;
@@ -33,17 +32,23 @@
                     font-family: 'Bebas', Arial, Helvetica, sans-serif;
                     margin: auto 0;
                 }
-        
-                @include breakpoint($minsm) {
+                
+                // @include breakpoint($minsm) {
+                @media screen and (min-width: 1199px) {
                     font-size: 4rem;
                     transition: $transition-fast;
                 }
             }
         }
 
-        @include breakpoint($minsm) {
-            &.js-shrink .branding a {
+        &.js-shrink .branding a {
+            @include breakpoint($minsm) {
                 font-size: 2rem;
+                transition: $transition-fast;
+            }
+
+            @include breakpoint($minxl) {
+                font-size: 4rem;
                 transition: $transition-fast;
             }
         }
@@ -87,7 +92,7 @@
         .swiper-wrapper {     
 
             .swiper-slide {
-                color: $color-dusty-gray;
+                color: $color-white;
                 display: flex;
                 flex-direction: column;
                 font-family: $swiper-font;
@@ -96,10 +101,12 @@
                 align-items: center;
                 padding: 4rem;
                 line-height: 2rem;
+                transition: $transition-fast;
                 width: 100%;
 
                 #{$select-headers} {
-                    color: $color-dusty-gray;
+                    color: $color-white;
+                    transition: $transition-fast;
                 }
 
                 @include breakpoint($minsm) {
@@ -118,6 +125,25 @@
 
         @include breakpoint($minsm) {
             margin: 12rem auto 0;
+        }
+    }
+
+    &.scrolled-down {
+        .swiper-container {
+            .swiper-wrapper .swiper-slide {
+                color: $color-dusty-gray;
+                transition: $transition-fast;
+
+                #{$select-headers} {
+                    color: $color-dusty-gray;
+                    transition: $transition-fast;
+                }
+            }
+        }
+
+        .swiper-button-prev, 
+        .swiper-button-next {
+            color: $color-dusty-gray;
         }
     }
 }
