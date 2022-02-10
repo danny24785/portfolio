@@ -111,28 +111,31 @@ Changelog
 - Adjusted styling (commented out .pocket and give the header visual a height of 100vh )
 - Added Swiper slide toegevoegd
 
-08-02-2022 - Version 0.2.5:
+09-02-2022 - Version 0.2.5:
 - Fix video autoplay in Safari iOS
 - Layout fixed mobile
 
-08-02-2022 - Version 0.2.6:
+09-02-2022 - Version 0.2.6:
 - Code refactory
 - Fix horizontal scroll
 - Layout fixes mobile
 - Z-index fix swiper and sticky header
 - Added Lobster font for swiper
 
-08-02-2022 - Version 0.2.7:
+09-02-2022 - Version 0.2.7:
 - Styling fixes menu on mobile and tablet
 - Removed unused code
 - Added swiper options for speed and autoplay
 
-08-02-2022 - Version 0.2.8:
+09-02-2022 - Version 0.2.8:
 - Removed more unused code
 - Moved functions from functions.php to /portfolio
 
-08-02-2022 - Version 0.2.9:
+09-02-2022 - Version 0.2.9:
 - Loading effects
+
+10-02-2022 - Version 0.3.0:
+- Changes in font-size, line-heights and margins paragraphs
 
 
 

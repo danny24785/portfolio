@@ -11,6 +11,7 @@ body.page {
         p {
             line-height: $content-line-height;
             font-size: $content-size;
+            padding-bottom: 0.75rem;
         }
 
         article {           
@@ -30,7 +31,6 @@ body.page {
         min-height: 20rem;
         
         p {
-            padding-top: 2rem;
             transition: $transition-medium;
         }
     }
