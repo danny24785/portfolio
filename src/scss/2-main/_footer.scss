@@ -13,11 +13,20 @@
         flex-direction: column;
         width: 100%;
 
-        .widget-container {
+        div.widget-container {
             @include display-flex();
-            padding: $inner-padding-small; 
             justify-content: center;
+            align-items: center;
             width: 100%;
+
+            &.copy {
+                justify-content: flex-start;
+                font-size: $content-size;     
+            }
+
+            &:last-of-type {
+                justify-content: flex-end;
+            }
 
             @include breakpoint($minsm) {
                 width: 50%;
@@ -29,11 +38,31 @@
                 height: auto;
                 width: 4rem;
             }
-        }
-    }
 
-    @include breakpoint($minsm) {
-        padding-top: 5rem;
+            .social-media {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+
+                li {
+                    list-style: none;
+                }
+
+                li.linkedin a {
+                    img {
+                        opacity: 1;
+                        height: 33px;
+                        transition: $transition-fast;
+                        width: 30px;
+                    }
+
+                    &:hover img {
+                        opacity: 0.6rem;
+                        transition: $transition-fast;
+                    }
+                }
+            }
+        }
     }
 }
 

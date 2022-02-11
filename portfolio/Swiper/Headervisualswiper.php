@@ -16,9 +16,7 @@ class Headervisualswiper
      */
     public function init()
     {
-
-        // Front-end
-        add_action('portfolio-header-texts', [$this, 'headerTextsSwiper']);
+        add_shortcode('portfolio-header-texts', [$this, 'headerTextsSwiper']);
     }
 
     /**
@@ -26,25 +24,51 @@ class Headervisualswiper
      * Custom post type for Header teksts
      * 
      **/
-    public function headerTextsSwiper($atts)
+    public function headerTextsSwiper()
     {
         $query_args = [
             'post_type'      => 'header-texts',
             'posts_per_page' => -1
         ];
     
-        $custom_query = new WP_Query( $query_args );
+        $custom_query = new \WP_Query( $query_args );
     
+        // Show a swiper slider if there are any header texts
         if ( $custom_query->have_posts() ) {
     
             $output = '<div class="swiper-container">';
             $output .= '<div class="swiper-wrapper">';
+            
+            // Loop through all the header texts and create a swiper slide for each one
             while ( $custom_query->have_posts() ) {
                 $custom_query->the_post();
-    
-                $output .= '<div class="swiper-slide">';
+                $thumb = get_the_post_thumbnail();
+                $output .= '<div class="swiper-slide';
+
+                    // use flex-direction: column if the 'column' option is checked
+                    get_field('column') ? $output .= '"display-column style="flex-direction: column;"' : $output .= '"';
                 
-                $output .= get_the_content();
+                $output .= '>';
+
+                $thumb != '' ? $output .= '<div class="swiper-thumb">' . $thumb . '</div>' : '';
+                
+                $output .= '<div class="swiper-content">' . get_the_content() . '</div>';
+                
+                // Show button if a url has been filled in
+                if(get_field('link')) { 
+                    $output .= '<div class="swiper-button-wrapper"><a href="' . get_field('link') . '" alt="project"';
+                    
+                    // Make sure the target is opened in a new tab if the option 'New window' is checked
+                    get_field('new_window') ? $output .= ' target="_blank"' : $output .= '';
+                    
+                    $output .= ' class="swiper-header-link">';
+                    
+                        // Use value of the label link field if filled in as button label
+                        get_field('label_link') != '' ? $output .= get_field('label_link') : $output .= __('Bezoek website', 'portfolio');
+                    
+                    $output .= '</a></div>';
+                }
+                
                 $output .= '</div>';
             }
             $output .= '</div>';

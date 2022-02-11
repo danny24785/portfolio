@@ -137,6 +137,15 @@ Changelog
 10-02-2022 - Version 0.3.0:
 - Changes in font-size, line-heights and margins paragraphs
 
+11-02-2022 - Version 0.3.1:
+- Change LinkedIn icon in footer
+- Layout changes footer
+- Fix featured image didn't show in slider on index.php
+- Install ACF for extra fields in header texts posts
+- Add button to swiper slides 
+- Add the possibility to use a vertical in stead of a horizontal layout for header slides
+- Styling header slider
+
 
 
 =============================

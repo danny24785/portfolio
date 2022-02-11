@@ -1,6 +1,12 @@
 <?php
-get_header();
-?>
+/**
+ * Index page.
+ * 
+ * @package portfolio
+ */
+
+get_header(); ?>
+
 <div class="projecten-wrapper">   
    <?php echo '<h1>' . get_the_title( get_option('page_for_posts', true) ) . '</h1>'; ?>
    <ul class="projecten">

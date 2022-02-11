@@ -87,27 +87,98 @@
         .swiper-wrapper {
 
             .swiper-slide {
-                color: $color-white;
                 display: flex;
-                flex-direction: column;
-                font-family: $swiper-font;
-                font-weight: bold;
-                justify-content: center;
                 align-items: center;
+                font-size: $content-size;
+                flex-direction: row;
+                justify-content: center;
                 padding: 4rem;
-                line-height: 2rem;
-                transition: $transition-fast;
                 width: 100%;
+
+                a {
+                    display: flex;
+                    align-items: center;
+                    flex-direction: row;
+                    justify-content: center;
+                    text-decoration: none;
+                }
 
                 #{$select-headers} {
                     color: $color-white;
                     transition: $transition-fast;
                 }
 
-                @include breakpoint($minsm) {
-                    font-size: 2rem;
-                    line-height: 3rem;
-                    padding: 12rem;
+                .swiper-thumb {
+                    display: block;
+                    max-height: 6rem;
+                    max-width: 6rem;
+                    padding: $inner-padding-small;
+
+                    @include breakpoint($minsm) {
+                        max-height: 16rem;
+                        max-width: 16rem;
+                    }
+                }
+
+                .swiper-content {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    transition: $transition-fast;
+
+                    color: $color-white;
+                    font-family: $swiper-font;
+                    font-weight: bold;
+                    line-height: 2rem;
+
+                    @include breakpoint($minsm) {
+                        font-size: 2rem;
+                        line-height: 3rem;
+                        padding: 0 12rem;
+                    }
+                }
+
+                .swiper-button-wrapper {  
+                    display: flex;
+                    justify-content: flex-end;
+                    width: 100%;
+
+                    .swiper-header-link {
+                        background-color: $color-guardsman-red;
+                        border-radius: $border-radius-small;
+                        color: $color-white;
+                        display: inline-block;
+                        font-family: $swiper-font;
+                        font-size: $content-size;
+                        padding: $inner-padding-small;
+                        transition: $transition-fast;
+                        width: auto;
+
+                        &:hover {
+                            background-color: $color-white;
+                            color: $color-guardsman-red;
+                            transition: $transition-fast;
+                        }
+
+                        @include breakpoint($minsm) {
+                            font-size: 2rem;
+                            line-height: 3rem;
+                        }
+                    }
+
+                    @include breakpoint($minlg) {
+                        margin-right: 14rem;
+                    }
+                }
+
+                &.display-column {
+                    width: 100%;
+                    .swiper-thumb {
+                        @include breakpoint($minsm) {
+                            max-height: auto;
+                            max-width: 80%;
+                        }
+                    }
                 }
             }
         }
