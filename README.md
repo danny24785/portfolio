@@ -146,6 +146,10 @@ Changelog
 - Add the possibility to use a vertical in stead of a horizontal layout for header slides
 - Styling header slider
 
+11-02-2022 - Version 0.3.2:
+- Styling header swiper
+- Added variables for max values of breakpoints
+
 
 
 =============================
