@@ -1,0 +1,234 @@
+@use '0-variables' as *;
+@use '1-mixins' as *;
+
+.header-swiper {
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+
+    .swiper-container {
+        color: $color-white;
+        margin: 6rem auto 0;
+        height: 80vh;
+        position: relative;
+        width: 100%;
+        z-index: 12;
+
+        .swiper-wrapper {
+
+            .swiper-slide {
+                display: flex;
+                align-items: center;
+                font-size: $content-size;
+                flex-direction: column;
+                justify-content: center;
+                padding: 4rem;
+                width: 100%;
+
+                .swiper-slide-inner {
+                    display: flex;
+                    align-items: center;
+                    font-size: $content-size;
+                    flex-direction: column;
+                    justify-content: center;
+                    width: 100%;
+
+                    #{$select-headers} {
+                        color: $color-white;
+                        transition: $transition-fast;
+                    }
+
+                    .swiper-thumb {
+                        display: flex;
+                        align-items: center;
+                        height: auto;
+                        width: 80%;
+
+                        &.circle,
+                        &.circle img {
+                            border-radius: 50%;
+                        }
+
+                        @include breakpoint($minsm) {
+                            height: auto;
+                            width: 15rem;
+
+                            @media (orientation: portrait) {
+                                width: 35rem;
+                            }
+                        }
+
+                        @include breakpoint($minxxl) {
+                            width: 35rem;
+                        }
+
+                        // @include breakpoint($minsm $xlmax) {
+                        
+                        @include breakpoint($minxl) {
+                            margin-left: 25rem;
+                        }
+                    }
+
+                    .swiper-content {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        transition: $transition-fast;
+
+                        color: $color-white;
+                        font-family: $swiper-font;
+                        font-weight: bold;
+                        line-height: 2rem;
+
+                        @include breakpoint($minsm $lgmax) {
+                            font-size: 2rem;
+                            line-height: 3rem;
+                        }
+
+                        @include breakpoint($minxl) {
+                            font-size: 2.2rem;
+                            line-height: 3.4rem;
+                            padding-left: 2rem;
+                            margin-right: 23rem;
+                        }
+                    }
+
+                    &.display-column {
+                        flex-direction: column;
+                        width: 100%;
+
+                        .swiper-content {
+                            margin: 0 2rem;
+
+                            @include breakpoint($minsm $lgmax) {
+                                margin: 0 8rem;
+                            }
+
+                            @include breakpoint($minxl) {
+                                margin: 0 18rem;
+                                padding-left: 0;
+                            }
+                        }
+
+                        .swiper-thumb {
+                            @include breakpoint($minxl) {
+                                margin-left: 0;
+                                width: 25%;
+                            }
+                        }
+                    }
+
+                    @include breakpoint($minsm) {
+                        flex-direction: row;
+                    }
+                    
+                    @media (orientation: portrait) {
+                        flex-direction: column;
+                        
+                        @include breakpoint($minsm) {
+                            flex-direction: column;
+                        }
+                    }
+                }
+
+                .swiper-button-wrapper {  
+                    display: flex;
+                    justify-content: flex-end;
+                    width: 100%;
+
+                    .swiper-header-link {
+                        background-color: $color-guardsman-red;
+                        border-radius: $border-radius-small;
+                        color: $color-white;
+                        display: inline-block;
+                        font-family: $swiper-font;
+                        font-size: $content-size;
+                        padding: $inner-padding-small;
+                        transition: $transition-fast;
+                        text-decoration: none;
+                        width: auto;
+
+                        &:hover {
+                            background-color: $color-white;
+                            color: $color-guardsman-red;
+                            transition: $transition-fast;
+                            text-decoration: none;
+                        }
+
+                        @include breakpoint($minsm) {
+                            font-size: 2rem;
+                            line-height: 3rem;
+                        }
+                    }
+
+                    @include breakpoint($minlg) {
+                        margin-right: 14rem;
+                    }
+
+                    @include breakpoint($minxl) {
+                        margin-right: 40rem;
+                    }
+                }
+            }
+
+            @include breakpoint($minsm) {
+                height: 76vh;
+            }
+        }
+
+        .swiper-button-prev, 
+        .swiper-button-next {
+            color: $color-dusty-gray;
+            top: 50%;
+            transition: $transition-fast;
+
+            &:hover {
+                color: $color-white;
+                transition: $transition-fast;
+            }
+        }
+
+        .swiper-button-prev {
+            @include breakpoint($minxl) {
+                margin-left: 5rem;
+            }
+
+            &:hover {
+                padding-right: 2rem;
+            }
+        }
+        
+        .swiper-button-next {
+            @include breakpoint($minxl) {
+                margin-right: 5rem;
+            }
+
+            &:hover {
+                padding-left: 2rem;
+            }
+        }
+
+        @include breakpoint($minsm) {
+            margin: 9rem auto 0;
+        }
+    }
+
+    &.scrolled-down {
+        .swiper-container {
+            .swiper-wrapper .swiper-slide {
+                color: $color-dusty-gray;
+                transition: $transition-fast;
+
+                #{$select-headers} {
+                    color: $color-dusty-gray;
+                    transition: $transition-fast;
+                }
+            }
+        }
+
+        .swiper-button-prev, 
+        .swiper-button-next {
+            color: $color-dusty-gray;
+        }
+    }
+}

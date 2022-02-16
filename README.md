@@ -155,6 +155,9 @@ Changelog
 - Added circle ACF field to header texts
 - Changes $xl, $minxl, $maxxl and $lgmax to accomodate much more common screens of 1680px wide in stead of 1600px wide screens
 
+15-02-2022 - Version 0.3.4:
+- increase the size of .swiper-thumb in portrait portviews in $minsm and bigger (tablets)
+
 
 
 =============================
