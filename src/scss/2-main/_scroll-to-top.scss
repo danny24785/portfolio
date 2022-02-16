@@ -1,0 +1,42 @@
+@use '0-variables' as *;
+@use '1-mixins' as *;
+
+.btn_scroll_top {
+	@include display-flex();
+    align-items: center;
+    justify-content: center;
+    background-color: $color-guardsman-red;
+	border-radius: 50%;
+    border: none;
+	bottom: 5rem;
+	box-shadow: $box-shadow;
+	color: $color-white;
+	cursor: pointer;
+    transition: $transition-fast;
+    transform: rotate(-90deg);
+	font-size: 2rem;
+	opacity: 0;
+	outline: none;
+	position: fixed;
+	right: 1rem;
+	z-index: 13;
+    height: 4rem;
+    width: 4rem;
+    padding-left: 12px;
+
+    &::after {
+        content: 'next';
+        color: $color-white;
+        font-family: 'swiper-icons';
+        font-size: 1rem;
+
+        @include breakpoint($minsm) {
+            font-size: 2rem;
+        }
+    }
+
+	&:hover {
+		opacity: 1;
+        transition: $transition-fast;
+	}
+}

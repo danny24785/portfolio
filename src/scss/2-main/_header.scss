@@ -119,12 +119,9 @@
 
         @include breakpoint($minsm) {
             margin-bottom: 1.5rem;
+            padding-left: 7px;
+            height: 4rem;
+            width: 4rem;
         }
-    }
-
-    @include breakpoint($minsm) {
-        padding-left: 7px;
-        height: 4rem;
-        width: 4rem;
     }
 }

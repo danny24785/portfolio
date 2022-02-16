@@ -165,6 +165,9 @@ Changelog
 - Layout header swiper in $xl and mobile
 - Interspace between copyright symbol and year in footer
 
+16-02-2022 - Version 0.3.7:
+- Added scroll to top button
+
 
 
 =============================

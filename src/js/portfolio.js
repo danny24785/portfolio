@@ -155,7 +155,6 @@ jQuery(document).ready(function ($) {
         } */
     }
 
-
     /**
      * 
      * Smooth scroll when anchor tag is clicked
@@ -168,5 +167,27 @@ jQuery(document).ready(function ($) {
             scrollTop: $($.attr(this, 'href')).offset().top
         }, 400);
     });
+
+
+    /**
+     * 
+     * Scroll to top
+     * 
+     */
+    window.onscroll = function() {
+		scroll_function();
+	}
+
+	$('#scroll_top_btn').on('click', function(){
+  		$("html, body").animate({ scrollTop: 0 }, "slow");
+	});
+
+    function scroll_function() {
+		if(document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+			$('.btn_scroll_top').css('opacity', '1');
+		} else {
+			$('.btn_scroll_top').css('opacity', '0');
+		}
+	}
 
 });
