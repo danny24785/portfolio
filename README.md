@@ -150,13 +150,20 @@ Changelog
 - Styling header swiper
 - Added variables for max values of breakpoints
 
-15-02-2022 - Version 0.3.3:
+16-02-2022 - Version 0.3.3:
 - Changes layout slider slides
 - Added circle ACF field to header texts
 - Changes $xl, $minxl, $maxxl and $lgmax to accomodate much more common screens of 1680px wide in stead of 1600px wide screens
 
-15-02-2022 - Version 0.3.4:
-- increase the size of .swiper-thumb in portrait portviews in $minsm and bigger (tablets)
+16-02-2022 - Version 0.3.4:
+- Increase the size of .swiper-thumb in portrait portviews in $minsm and bigger (tablets)
+
+16-02-2022 - Version 0.3.5:
+- Scroll down button bottom header
+
+16-02-2022 - Version 0.3.6:
+- Layout header swiper in $xl and mobile
+- Interspace between copyright symbol and year in footer
 
 
 

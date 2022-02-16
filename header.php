@@ -55,6 +55,8 @@
             <source src="/wp-content/themes/portfolio/assets/video/coding-background.mp4">
         </video>
     </div>
+
+    <div class="arrow-down"><a href="#intro"></a></div>
     
 
 

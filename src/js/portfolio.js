@@ -154,4 +154,19 @@ jQuery(document).ready(function ($) {
             }, 250);
         } */
     }
+
+
+    /**
+     * 
+     * Smooth scroll when anchor tag is clicked
+     * 
+     */
+    $(document).on('click', 'a[href^="#"]', function (event) {
+        event.preventDefault();
+    
+        $('html, body').animate({
+            scrollTop: $($.attr(this, 'href')).offset().top
+        }, 400);
+    });
+
 });
