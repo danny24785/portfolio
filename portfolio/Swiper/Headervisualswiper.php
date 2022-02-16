@@ -43,16 +43,27 @@ class Headervisualswiper
             while ( $custom_query->have_posts() ) {
                 $custom_query->the_post();
                 $thumb = get_the_post_thumbnail();
-                $output .= '<div class="swiper-slide';
+                $output .= '<div class="swiper-slide"';
+                
+                $output .= '><div class="swiper-slide-inner';
 
                     // use flex-direction: column if the 'column' option is checked
-                    get_field('column') ? $output .= '"display-column style="flex-direction: column;"' : $output .= '"';
+                    get_field('column') ? $output .= ' display-column"' : $output .= '"';
                 
                 $output .= '>';
 
-                $thumb != '' ? $output .= '<div class="swiper-thumb">' . $thumb . '</div>' : '';
+                if($thumb != '') {
+                    $output .= '<div class="swiper-thumb';
+                    
+                    get_field('circle') ? $output .= ' circle' : $output .= '';
+
+                    $output .= '">' . $thumb . '</div>';
+                } else {
+                    $output .= '';
+                }
                 
                 $output .= '<div class="swiper-content">' . get_the_content() . '</div>';
+                $output .= '</div>';
                 
                 // Show button if a url has been filled in
                 if(get_field('link')) { 

@@ -150,6 +150,11 @@ Changelog
 - Styling header swiper
 - Added variables for max values of breakpoints
 
+15-02-2022 - Version 0.3.3:
+- Changes layout slider slides
+- Added circle ACF field to header texts
+- Changes $xl, $minxl, $maxxl and $lgmax to accomodate much more common screens of 1680px wide in stead of 1600px wide screens
+
 
 
 =============================
