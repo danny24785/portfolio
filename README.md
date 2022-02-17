@@ -168,6 +168,10 @@ Changelog
 16-02-2022 - Version 0.3.7:
 - Added scroll to top button
 
+16-02-2022 - Version 0.3.8: 
+- Layout content $xxl portview 
+- Same speed for all scroll animations (scroll down and scroll up)
+
 
 
 =============================

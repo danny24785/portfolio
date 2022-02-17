@@ -160,12 +160,14 @@ jQuery(document).ready(function ($) {
      * Smooth scroll when anchor tag is clicked
      * 
      */
+    let animationSpeed = 400;
+
     $(document).on('click', 'a[href^="#"]', function (event) {
         event.preventDefault();
     
         $('html, body').animate({
             scrollTop: $($.attr(this, 'href')).offset().top
-        }, 400);
+        }, animationSpeed);
     });
 
 
@@ -179,7 +181,7 @@ jQuery(document).ready(function ($) {
 	}
 
 	$('#scroll_top_btn').on('click', function(){
-  		$("html, body").animate({ scrollTop: 0 }, "slow");
+  		$("html, body").animate({ scrollTop: 0 }, animationSpeed);
 	});
 
     function scroll_function() {

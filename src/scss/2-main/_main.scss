@@ -11,11 +11,20 @@
         @include breakpoint($minsm) {
             padding-bottom: 7rem;
         }
+
+        @include breakpoint($minxxl) {
+            padding: 3rem;
+        }
     }
 
     @include breakpoint($minsm) {
-        width: 100%;
-        max-width: $max-width-content;
+        // max-width: $max-width-content;
+        max-width: 100%;
         margin: 0 auto;
+        width: 100%;
+    }
+
+    @include breakpoint($minxxl) {
+        padding: 0 30rem;
     }
 }
