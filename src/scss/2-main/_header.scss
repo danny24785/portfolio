@@ -42,7 +42,7 @@
         }
 
         &.js-shrink .branding a {
-            @include breakpoint($minsm) {
+            @include breakpoint($minsm $lgmax) {
                 font-size: 1.5rem;
                 transition: $transition-fast;
             }

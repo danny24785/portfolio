@@ -123,6 +123,10 @@
                     @include breakpoint($minsm) {
                         flex-direction: row;
                     }
+
+                    // @include breakpoint($minxxl) {
+                    //     max-width: 60%;
+                    // }
                     
                     @media (orientation: portrait) {
                         flex-direction: column;

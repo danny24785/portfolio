@@ -12,14 +12,14 @@
     padding: $inner-padding-small;
     text-decoration: none;
     text-align: center;    
-    transition: $transition-medium;
+    transition: $transition-fast;
     width: 100%;
 
     &:hover {
-        background-color: $color-guardsman-red;
-        background-image: $gradient-primary-hover;
+        background-color: darken($color-guardsman-red, 10%);
+        // background-image: $gradient-primary-hover;
         cursor: pointer;
-        transition: $transition-medium;
+        transition: $transition-fast;
     }
 
     @include breakpoint($minsm) {

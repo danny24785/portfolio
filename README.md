@@ -168,9 +168,14 @@ Changelog
 16-02-2022 - Version 0.3.7:
 - Added scroll to top button
 
-16-02-2022 - Version 0.3.8: 
+17-02-2022 - Version 0.3.8: 
 - Layout content $xxl portview 
 - Same speed for all scroll animations (scroll down and scroll up)
+
+17-02-2022 - Version 0.3.9:
+- 3 slides per view on $xxl portview
+- Bigger font-size .branding and .main-nav in sticky header in $xxl portview 
+- hover-over buttons
 
 
 

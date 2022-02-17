@@ -91,6 +91,10 @@
                         background-color: $color-black;
                         color: $color-white;
                     }
+
+                    @include breakpoint($minxxl) {
+                        font-size: 1.4rem;
+                    }
                 }
 
                 &.current-menu-item a {

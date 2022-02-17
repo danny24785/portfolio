@@ -119,6 +119,12 @@ jQuery(document).ready(function ($) {
         navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev'
+        },
+        breakpoints: {
+            1921: {
+                slidesPerView: 3,
+                spaceBetween: 20
+            }
         }
     });
 
