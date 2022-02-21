@@ -62,7 +62,8 @@ class Headervisualswiper
                     $output .= '';
                 }
                 
-                $output .= '<div class="swiper-content">' . get_the_content() . '</div>';
+                // $output .= '<h2>' . get_the_title() . '</h2>';
+                $output .= '<div class="swiper-content"><h2>' . get_the_title() . '</h2>' . get_the_content() . '</div>';
                 $output .= '</div>';
                 
                 // Show button if a url has been filled in

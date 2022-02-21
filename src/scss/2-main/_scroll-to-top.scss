@@ -20,9 +20,8 @@
 	position: fixed;
 	right: 1rem;
 	z-index: 13;
-    height: 4rem;
-    width: 4rem;
-    padding-left: 12px;
+    height: 2rem;
+    width: 2rem;
 
     &::after {
         content: 'next';
@@ -39,4 +38,9 @@
 		opacity: 1;
         transition: $transition-fast;
 	}
+
+    @include breakpoint($minsm) {
+        height: 4rem;
+        width: 4rem;
+    }
 }

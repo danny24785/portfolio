@@ -38,7 +38,7 @@
         </div>
     </footer>
 
-    <button id="scroll_top_btn" class="btn_scroll_top"></button>
+    <div id="scroll_top_btn" class="btn_scroll_top"></div>
 </div>
 
 <?php wp_footer(); ?>

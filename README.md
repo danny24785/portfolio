@@ -185,6 +185,10 @@ Changelog
 21-02-2022 - Version 0.4.1:
 - Instagram logo added footer
 
+21-02-2022 - Version 0.4.2:
+- Styling slider on mobile
+- Styling scroll to top on mobile
+
 
 
 =============================
