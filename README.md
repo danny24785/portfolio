@@ -177,6 +177,11 @@ Changelog
 - Bigger font-size .branding and .main-nav in sticky header in $xxl portview 
 - hover-over buttons
 
+21-02-2022 - Version 0.4.0:
+- Max-width article
+- Commented out aside
+- Added gitHub logo to footer
+
 
 
 =============================

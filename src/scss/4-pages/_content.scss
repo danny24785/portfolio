@@ -15,23 +15,35 @@ body.page {
         }
 
         article {           
-            figure {
-                &.alignleft img {
-                    margin: 0 1rem 0 0;
-                }
 
-                &.alignright img {
-                    margin: 0 0 0 1rem;
+            .entry-content {
+                min-height: 20rem;
+                
+                p {
+                    transition: $transition-medium;
+        
+                    figure {
+                        
+                        &.alignleft img {
+                            margin: 0 3rem 0 0;
+
+                        }
+        
+                        &.alignright img {
+                            margin: 0 0 0 3rem;
+                        }
+
+                        img {
+                            max-width: 10rem;
+                        }
+                    }
                 }
             }
-        }
-    }
 
-    .entry-content {
-        min-height: 20rem;
-        
-        p {
-            transition: $transition-medium;
+            @include breakpoint($minsm) {
+                margin: 0 auto;
+                max-width: $mdmax;
+            }
         }
     }
 

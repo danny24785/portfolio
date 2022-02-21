@@ -44,32 +44,12 @@ jQuery(document).ready(function ($) {
     $(window).on('scroll', function () {
         styleHeaderScrollDown(50, 25);
         showOnScrollUp();
-        scrollInView('.entry-content p');
-        scrollInView('.entry-content ul');
-        scrollInView('.entry-content ol');
-        scrollInView('.entry-content img');
-        scrollInView('.entry-content h2');
-        scrollInView('.entry-content h3');
-        scrollInView('.entry-content h4');
-        // scrollInView('h1.entry-title');
-        // scrollInView('#footer-website'); 
-        // scrollInView('.frm_form_field');
+        
     });
 
-    $(window).on('load', function () {
-        scrollInView('.entry-content p');
-        scrollInView('.entry-content ul');
-        scrollInView('.entry-content ol');
-        scrollInView('.entry-content img');
-        scrollInView('.entry-content h2');
-        scrollInView('.entry-content h3');
-        scrollInView('.entry-content h4');
-        // scrollInView('h1.entry-title');
-        // scrollInView('#footer-website');
-        // scrollInView('.frm_form_field');
-        // scrollInView('.swiper-container');
-        // scrollInView('.header-website');
-    });
+    // $(window).on('load', function () {
+    //     scrollInView('.entry-content p');
+    // });
  
     // Add/remove classes based on page position
     function styleHeaderScrollDown(whenToAdd, whenToRemove) {

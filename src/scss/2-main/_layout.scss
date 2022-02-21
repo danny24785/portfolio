@@ -18,18 +18,18 @@
             width: 100%;
         }
 
-        @include breakpoint($minsm) {
-            width: 75%;
-        }
+        // @include breakpoint($minsm) {
+        //     width: 75%;
+        // }
     }
 
-    aside {
-        width: 100%;
+    // aside {
+    //     width: 100%;
 
-        @include breakpoint($minsm) {
-            width: 25%;
-        }
-    }
+    //     @include breakpoint($minsm) {
+    //         width: 25%;
+    //     }
+    // }
 }
 
 .footer-website {
