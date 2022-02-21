@@ -192,6 +192,9 @@ Changelog
 21-02-2022 - Version 0.4.3:
 - Font-size button header swiper
 
+21-02-2022 - Version 0.4.4:
+- Changed $minxxl
+
 
 
 =============================
