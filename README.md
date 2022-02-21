@@ -182,6 +182,9 @@ Changelog
 - Commented out aside
 - Added gitHub logo to footer
 
+21-02-2022 - Version 0.4.1:
+- Instagram logo added footer
+
 
 
 =============================
