@@ -189,6 +189,9 @@ Changelog
 - Styling slider on mobile
 - Styling scroll to top on mobile
 
+21-02-2022 - Version 0.4.3:
+- Font-size button header swiper
+
 
 
 =============================
